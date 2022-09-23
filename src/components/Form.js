@@ -2,13 +2,18 @@ import React, { useState } from 'react'
 
 const Form = () => {
   const [isShown, setIsShown] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(true)
+
+  const toggleExpanded = () => {
+    setIsExpanded((isExpanded) => !isExpanded)
+  }
   return (
 <div>
   <h1>Story Outliner</h1>
   <h6>by Riley Soloner</h6>
   <div className="mainFormDiv">
 
-  <form name="mainOutlineForm">
+  <div name="mainOutlineForm">
     <label htmlFor="context-input"
            className="contextLabel"
            onMouseEnter={() => setIsShown(true)}
@@ -23,7 +28,7 @@ const Form = () => {
            name="context-input"
            placeholder="your text here">
     </input> <br />
-    <button>v</button> <br />
+    <button onClick={ toggleExpanded }> { isExpanded ? "v" : ">"} </button> <br />
     <label htmlFor="context-input"
            className="catalystLabel">Catalyst
     </label> <br />
@@ -56,7 +61,7 @@ const Form = () => {
            placeholder="your text here">
     </input> <br />
     <button>v</button> <br />
-  </form>
+  </div>
   </div>
 </div>
   )
