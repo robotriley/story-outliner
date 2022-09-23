@@ -1,0 +1,58 @@
+.App {
+  background-color: #121316;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  justify-content:flex-start;
+  font-size: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.mainFormDiv {
+  border: solid red 3px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight:700;
+}
+.contextLabel {
+  color: dodgerblue;
+}
+
+.catalystLabel {
+  color: green;
+}
+
+.pointOfNoReturnLabel {
+  color: orange;
+}
+
+.climaxLabel {
+  color: firebrick;
+}
+
+.denouementLabel {
+  color: purple;
+}
+
+.contextDefinition {
+  z-index: -1;
+  color: dodgerblue;
+  transition: margin 0.2s ease-in-out;
+}
