@@ -3,7 +3,8 @@ import useCollapse from 'react-collapsed'
 
 const Collapsible = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
-  return ( <div>
+  return (
+  <div>
     <button {...getToggleProps()} >{isExpanded ? 'collapse' : 'expand'} </button>
     <div {...getCollapseProps()} >
       <div className="content">
@@ -28,7 +29,7 @@ const Collapsible = () => {
         <input name="denouementInput"
           placeholder='your text here'></input> <br /><br />
       </div>
-    </div> <br></br>
+    </div>
   </div>
   )
 
@@ -36,11 +37,6 @@ const Collapsible = () => {
 
 const Form = () => {
   const [isShown, setIsShown] = useState(false)
-  // const [isExpanded, setIsExpanded] = useState(true)
-
-  // const toggleExpanded = () => {
-  //   setIsExpanded((isExpanded) => !isExpanded)
-  // }
   return (
 <div>
   <h1>Story Outliner</h1>
@@ -55,7 +51,7 @@ const Form = () => {
            Context
            </label> <br />
            {isShown && <div className='contextDefinition'>
-           <p>The Introduction, <br />
+            <p>The Introduction, <br />
               The Exposition, <br />
               The Status Quo, <br />
               Ordinary World, <br />
@@ -69,9 +65,10 @@ const Form = () => {
     </input> <br />
       <Collapsible /> <br></br>
 
-    <label htmlFor="context-input"
-           className="catalystLabel">Catalyst
-    </label> <br />
+    <label htmlFor="catalyst-input"
+           className="catalystLabel">
+           Catalyst
+           </label> <br />
     <input type="text"
            name="catalyst-input"
            placeholder="your text here">

@@ -4,13 +4,27 @@ What is the idea?
 **What functionality does our app need?**
 1. What libraries do we need or can we use?
 2. What tables in the DB do I need to accomplish this?
-  ...
 3. What methods/functions will I need to write?
-  Something for expanding / collapsing nested forms within the main form segments.
 	- What arguments will these functions accept/pass?
 4. What does the front end consist of? (user interface / layout)
   Inputs, buttons for expanding/collapsing, an image with the stoy arc graph, input values passed into the story arc "bubbles."
 
+1. - I need "expand-collapse" for the collapsible forms
+   - I need something for the "pop up on hover" feature for showing the definitions of the different story points
+
+2. I don't need tables in the DB. this is front end only
+
+3. - I need to write a method/function to handle the expanding/collapsing of child forms within the parent form
+   - I need to write a funciton for populating the story arc graphic with the user's input
+    - passing the user's input into the corresponding piece of the story on the arc graphic
+
+4. The front end consists of:
+    - The parent form, consisting of the 5 main story points
+      - Each story point has an input and an 'expand' button. When clicked, the button reveals a child form (complete with its own 5 point story
+        structure) beneath the corresponding story point. It is collapsible.
+    - A story arc graphic. This will serve as a basic visual representation of the user's outlined story.
+      The content from the form's input fields will populate the corresponding "bubble" on the graph's 5 story points.
+      Each "bubble" will be clickable. On click, the child form's input (if any) will be visible beneath the parent.
 
 **Libraries/Tools** (it helps to have backup libraries for any given functionality)
 BrowserRouter, useState
