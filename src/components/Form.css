@@ -1,0 +1,109 @@
+.App {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: flex-start;
+  font-size: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  border-radius: 5px;
+  border-style: solid;
+  cursor: pointer;
+  color: black;
+  font-size: 12px;
+}
+
+input {
+  width: 90%;
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.mainFormDiv {
+  border: solid red 3px;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+
+/* INPUT LABELS */
+.contextLabel {
+  color: dodgerblue;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.catalystLabel {
+  color: green;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.pointOfNoReturnLabel {
+  color: orange;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.climaxLabel {
+  color: firebrick;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.denouementLabel {
+  color: purple;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.innerContextLabel {
+  color: dodgerblue;
+  font-weight: 700;
+}
+
+.innerCatalystLabel {
+  color: green;
+  font-weight: 700;
+}
+
+.innerPointOfNoReturnLabel {
+  color: orange;
+  font-weight: 700;
+}
+
+.innerClimaxLabel {
+  color: firebrick;
+  font-weight: 700;
+}
+
+.innerDenouementLabel {
+  color: purple;
+  font-weight: 700;
+}
+
+/* STORY POINT DEFINITIONS */
+
+.contextDefinition {
+  z-index: 200;
+  color: dodgerblue;
+  /* border: solid red; */
+}

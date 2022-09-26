@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import useCollapse from 'react-collapsed'
+import 'rsuite/dist/rsuite.min.css';
+import './Form.css';
+import { Popover, Whisper } from 'rsuite';
 
 const Collapsible = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
@@ -36,7 +39,7 @@ const Collapsible = () => {
 }
 
 const Form = () => {
-  const [isShown, setIsShown] = useState(false)
+  
   return (
 <div>
   <h1>Story Outliner</h1>
@@ -44,39 +47,46 @@ const Form = () => {
   <div className="mainFormDiv">
 
   <div name="mainOutlineForm">
-    <label htmlFor="context-input"
-           className="contextLabel"
-           onMouseEnter={() => setIsShown(true)}
-           onMouseLeave={() => setIsShown(false)}>
-           Context
-           </label> <br />
-           {isShown && <div className='contextDefinition'>
-            <p>The Introduction, <br />
-              The Exposition, <br />
-              The Status Quo, <br />
-              Ordinary World, <br />
-              Protagonist's Comfort Zone, <br />
-              The Set-Up, <br />
-              The Hook </p>
-            </div>}
-    <input type="text"
-           name="context-input"
-           placeholder="your text here">
-    </input> <br />
-      <Collapsible /> <br></br>
-
-    <label htmlFor="catalyst-input"
-           className="catalystLabel">
-           Catalyst
-           </label> <br />
+          <Whisper followCursor speaker={<Popover arrow={false} >
+            <p>The Introduction,
+               The Exposition,
+               The Status Quo, <br />
+               Ordinary World,
+               Protagonist's Comfort Zone, <br />
+               The Set-Up,
+               The Hook </p></Popover>}>
+            <label htmlFor="context-input"
+              className="contextLabel">
+              Context
+            </label>
+          </Whisper>
+            
+            {/* </div> */}
     <input type="text"
            name="catalyst-input"
            placeholder="your text here">
     </input> <br />
-          <Collapsible /> <br></br>
-    <label htmlFor="context-input"
-           className="pointOfNoReturnLabel" >Point of No Return
-    </label> <br />
+      <Collapsible /> <br></br>
+          <Whisper followCursor speaker={<Popover arrow={false} >
+            This is a Popover that follows cursor</Popover>}>
+            <label htmlFor="catalyst-input"
+              className="catalystLabel">
+              Catalyst
+            </label>
+          </Whisper>
+    
+    <input type="text"
+           name="catalyst-input"
+           placeholder="your text here">
+    </input> <br />
+      <Collapsible /> <br></br>
+          <Whisper followCursor speaker={<Popover arrow={false} >
+            This is a Popover that follows cursor</Popover>}>
+          <label htmlFor="pointOfNoReturn-input"
+            className='pointOfNoReturnLabel'>
+              Point of No Return
+            </label>
+        </Whisper> 
     <input type="text"
            name="point-of-no-return-input"
            placeholder="your text here">
@@ -84,7 +94,7 @@ const Form = () => {
           <Collapsible /> <br></br>
     <label htmlFor="context-input"
            className="climaxLabel" >Climax
-    </label> <br />
+    </label> 
     <input type="text"
            name="climax-input"
            placeholder="your text here">
