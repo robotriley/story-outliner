@@ -9,6 +9,17 @@
   font-size: 20px;
   color: white;
 }
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  /* border: solid rgb(47, 45, 45); */
+  /* border-radius: 10px; */
+  padding-left: 8px;
+}
 
 .App-link {
   color: #61dafb;
@@ -28,6 +39,7 @@ input {
   color: white;
   border-style: solid;
   border-radius: 5px;
+  font-size: medium;
 }
 
 ::placeholder {
@@ -35,9 +47,9 @@ input {
 }
 
 .mainFormDiv {
-  border: solid red 3px;
+  /* border: solid red 2px; */
   border-radius: 30px;
-  padding: 40px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
