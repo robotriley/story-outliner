@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
-
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
 import { Popover, Whisper } from 'rsuite';
+import { Drawer, Button, Placeholder } from 'rsuite';
 import Collapsible from './Collapsible';
 
 const Form = () => {
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState();
+
+  const handleOpen = key => {
+    setOpen(true);
+    setPlacement(key);
+  };
   
   return (
 <div>
@@ -13,6 +20,18 @@ const Form = () => {
     <h1>Story Outliner</h1>
     <h6>by Riley Soloner</h6>
   </div>
+      <Drawer placement={placement} open={open} keyboard={true} size={'lg'} onClose={() => setOpen(false)}>
+        <Drawer.Header>
+          <h2>About</h2>
+        </Drawer.Header>
+        <Drawer.Body>
+          <h4>Story Outliner by Riley Soloner</h4>
+          <h4>Built with React</h4>
+        </Drawer.Body>
+      </Drawer>
+      
+      <Button appearance="ghost" color="red" onClick={() => handleOpen('top')}>About</Button>
+      
   <div className="mainFormDiv">
 
   <div name="mainOutlineForm">

@@ -1,11 +1,12 @@
 import React from 'react'
 import useCollapse from 'react-collapsed'
+import { Button } from 'rsuite'
 
 const Collapsible = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
   return (
     <div>
-      <button {...getToggleProps()} >{isExpanded ? 'collapse' : 'expand'} </button>
+      <Button {...getToggleProps()} appearance="subtle" size="xs" color="white" >{isExpanded ? 'collapse' : 'expand'} </Button>
       <div {...getCollapseProps()} >
         <div className="content">
           <label htmlfor="contextInput"
