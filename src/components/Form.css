@@ -112,10 +112,36 @@ input {
   font-weight: 700;
 }
 
-/* STORY POINT DEFINITIONS */
-
-.contextDefinition {
-  z-index: 200;
+/* STORY POINT POPOVERS */
+.contextPopover {
+  background-color: black;
+  border: dashed dodgerblue;
+  font-weight: 600;
   color: dodgerblue;
-  /* border: solid red; */
+}
+
+.catalystPopover {
+  background-color: black;
+  border: dashed green;
+  font-weight: 600;
+  color: green;
+}
+
+.pointOfNoReturnPopover {
+  background-color: black;
+  border: dashed orange;
+  font-weight: 600;
+  color: orange;
+}
+.climaxPopover {
+  background-color: black;
+  border: dashed firebrick;
+  font-weight: 600;
+  color: firebrick;
+}
+.denouementPopover {
+  background-color: black;
+  border: dashed purple;
+  font-weight: 600;
+  color: purple;
 }

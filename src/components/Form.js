@@ -19,14 +19,22 @@ const Form = () => {
   <div className='titles'>
     <h1>Story Outliner</h1>
     <h6>by Riley Soloner</h6>
+        <img src="./student.jpeg" alt="About1"></img>
   </div>
-      <Drawer placement={placement} open={open} keyboard={true} size={'lg'} onClose={() => setOpen(false)}>
+      <Drawer className='drawer'
+              placement={placement}
+              open={open}
+              keyboard={true}
+              size={'lg'}
+              onClose={() => setOpen(false)}>
         <Drawer.Header>
           <h2>About</h2>
         </Drawer.Header>
         <Drawer.Body>
-          <h4>Story Outliner by Riley Soloner</h4>
-          <h4>Built with React</h4>
+  <div className='insideDrawer'>
+            <img src="./troll-flower.png" alt="About1"></img>
+            
+          </div>
         </Drawer.Body>
       </Drawer>
       
@@ -35,7 +43,8 @@ const Form = () => {
   <div className="mainFormDiv">
 
   <div name="mainOutlineForm">
-          <Whisper followCursor speaker={<Popover arrow={false} >
+          <Whisper followCursor 
+                   speaker={<Popover className='contextPopover' arrow={false} >
             <p>The Introduction, Exposition, The Status Quo, <br />
                Ordinary World, Protagonist's Comfort Zone, <br />
                The Set-Up
@@ -52,9 +61,10 @@ const Form = () => {
            placeholder="your text here">
     </input>
       <Collapsible /> <br />
-          <Whisper followCursor speaker={<Popover arrow={false} >
-            <p>Inciting Incident, Exciting Incident, Rising Action, Call to Adventure, <br />
-               The Problem, The Hook, Disturbance
+          <Whisper followCursor 
+                   speaker={<Popover className='catalystPopover' arrow={false} >
+                     <p>Inciting Incident, Exciting Incident, Rising Action, <br />
+                     Call to Adventure, The Problem, The Hook, Disturbance
             </p></Popover>}>
             <label htmlFor="catalyst-input"
               className="catalystLabel">
@@ -66,7 +76,8 @@ const Form = () => {
            placeholder="your text here">
     </input> <br />
       <Collapsible /> <br />
-          <Whisper followCursor speaker={<Popover arrow={false} >
+          <Whisper followCursor
+                   speaker={<Popover className='pointOfNoReturnPopover' arrow={false} >
             <p>New and Unplanned Direction, "You Can't Go Home Again," <br />
                Crossing the Threshold, No Way Out 
             </p></Popover>}>
@@ -80,7 +91,8 @@ const Form = () => {
            placeholder="your text here">
     </input> <br />
       <Collapsible /> <br />
-          <Whisper followCursor speaker={<Popover arrow={false} >
+          <Whisper followCursor
+                   speaker={<Popover className='climaxPopover' arrow={false} >
             <p>
             Main Event, The Highest Point of Tension, Decisive Moment, <br />
             The Release, Pivotal Moment, Peak of the Story <br />
@@ -95,7 +107,8 @@ const Form = () => {
            placeholder="your text here">
     </input> <br />
       <Collapsible /> <br />
-        <Whisper followCursor speaker={<Popover arrow={false} >
+        <Whisper followCursor
+            speaker={<Popover className='denouementPopover' arrow={false} >
           <p>
             The Lasting Image, Resolution, Conclusion, <br />
             The Falling Action, Closure, Final Outcome, <br />
