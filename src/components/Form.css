@@ -145,3 +145,23 @@ input {
   font-weight: 600;
   color: purple;
 }
+
+/* DRAWER 1 */
+
+.rs-drawer-body {
+  background-color: white;
+}
+
+.insideDrawer {
+  display: flex;
+  justify-content: center;
+  border: solid red;
+  border-radius: 10px;
+}
+
+#About1 {
+max-height: 210px;
+}
+#About2 {
+max-height: 210px;
+}

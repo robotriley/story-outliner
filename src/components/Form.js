@@ -19,20 +19,21 @@ const Form = () => {
   <div className='titles'>
     <h1>Story Outliner</h1>
     <h6>by Riley Soloner</h6>
-        <img src="./student.jpeg" alt="About1"></img>
+
   </div>
       <Drawer className='drawer'
               placement={placement}
               open={open}
               keyboard={true}
-              size={'lg'}
+              size={'md'}
               onClose={() => setOpen(false)}>
         <Drawer.Header>
           <h2>About</h2>
         </Drawer.Header>
         <Drawer.Body>
   <div className='insideDrawer'>
-            <img src="./troll-flower.png" alt="About1"></img>
+            <img id='About1' src="./About1.png" alt="About1"></img>
+            <img id='About2' src="./About2.png" alt="About2"></img>
             
           </div>
         </Drawer.Body>
