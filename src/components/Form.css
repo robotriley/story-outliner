@@ -82,7 +82,7 @@ input {
 }
 
 .denouementLabel {
-  color: purple;
+  color: violet;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -108,7 +108,7 @@ input {
 }
 
 .innerDenouementLabel {
-  color: purple;
+  color: violet;
   font-weight: 700;
 }
 
@@ -141,27 +141,163 @@ input {
 }
 .denouementPopover {
   background-color: black;
-  border: dashed purple;
+  border: dashed indigo;
   font-weight: 600;
-  color: purple;
+  color: violet;
 }
 
 /* DRAWER 1 */
+
+.rs-drawer-header {
+  background-color: black;
+}
+
+h2 {
+  color: white;
+}
 
 .rs-drawer-body {
   background-color: white;
 }
 
-.insideDrawer {
+.drawerWords1 {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
   justify-content: center;
-  border: solid red;
-  border-radius: 10px;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  /* border: solid red; */
+}
+.drawerWords2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  /* border: solid red; */
 }
 
-#About1 {
-max-height: 210px;
+h4 {
+  /* border: solid red; */
 }
-#About2 {
+.drawerImages1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  align-content: space-between;
+  /* border: solid black; */
+}
+.drawerImages2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  align-content: space-around;
+  /* border: solid black; */
+}
+
+#AboutImg {
+max-height: 180px;
+/* border: solid red; */
+}
+/* #About2 {
 max-height: 210px;
+} */
+
+#buttonBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* VISUALIZER */
+#blankArc {
+  max-width: 1500px;
+}
+
+#visualizerDrawer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 90px;
+}
+
+#contextBubble {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 220px;
+  left: 10px;
+  border: solid dodgerblue;
+  color: dodgerblue;
+  border-width: 7px;
+  border-radius: 20px;
+  height: 100px;
+  width: 150px;
+}
+#catalystBubble {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 280px;
+  left: 240px;
+  border: solid green;
+  color: green;
+  border-width: 7px;
+  border-radius: 20px;
+  height: 100px;
+  width: 150px;
+}
+#pointOfNoReturnBubble {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 220px;
+  left: 550px;
+  border: solid orange;
+  color: orange;
+  border-width: 7px;
+  border-radius: 20px;
+  height: 100px;
+  width: 150px;
+}
+#climaxBubble {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 65px;
+  right: 310px;
+  border: solid firebrick;
+  color: firebrick;
+  border-width: 7px;
+  border-radius: 20px;
+  height: 100px;
+  width: 150px;
+}
+#denouementBubble {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 196px;
+  right: 60px;
+  border: solid violet;
+  color: violet;
+  border-width: 7px;
+  border-radius: 20px;
+  height: 100px;
+  width: 150px;
 }

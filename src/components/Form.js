@@ -2,45 +2,27 @@ import React, { useState } from 'react'
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
 import { Popover, Whisper } from 'rsuite';
-import { Drawer, Button, Placeholder } from 'rsuite';
+// import { Drawer, Button, Placeholder } from 'rsuite';
 import Collapsible from './Collapsible';
+import AboutDrawer from './AboutDrawer';
+import Visualize from './Visualize';
 
 const Form = () => {
-  const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState();
-
-  const handleOpen = key => {
-    setOpen(true);
-    setPlacement(key);
-  };
   
+  const handleChange = (e) => {
+    console.log(e.target.value)
+  }
+
   return (
 <div>
   <div className='titles'>
     <h1>Story Outliner</h1>
-    <h6>by Riley Soloner</h6>
 
   </div>
-      <Drawer className='drawer'
-              placement={placement}
-              open={open}
-              keyboard={true}
-              size={'md'}
-              onClose={() => setOpen(false)}>
-        <Drawer.Header>
-          <h2>About</h2>
-        </Drawer.Header>
-        <Drawer.Body>
-  <div className='insideDrawer'>
-            <img id='About1' src="./About1.png" alt="About1"></img>
-            <img id='About2' src="./About2.png" alt="About2"></img>
-            
-          </div>
-        </Drawer.Body>
-      </Drawer>
-      
-      <Button appearance="ghost" color="red" onClick={() => handleOpen('top')}>About</Button>
-      
+  <div id="buttonBar">
+  <AboutDrawer />
+  <Visualize /* handleChange={handleChange} */ />
+  </div>
   <div className="mainFormDiv">
 
   <div name="mainOutlineForm">
@@ -58,8 +40,9 @@ const Form = () => {
             
             {/* </div> */}
     <input type="text"
-           name="catalyst-input"
-           placeholder="your text here">
+           name="context-input"
+           placeholder="your text here"
+          /*  onChange={handleChange}*/>
     </input>
       <Collapsible /> <br />
           <Whisper followCursor 
