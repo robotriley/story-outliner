@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Drawer, Button } from 'rsuite';
 
-const Visualize = ({handleChange}) => {
+const Visualize = () => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();

@@ -42,7 +42,7 @@ const Form = () => {
     <input type="text"
            name="context-input"
            placeholder="your text here"
-          /*  onChange={handleChange}*/>
+           onChange={handleChange}>
     </input>
       <Collapsible /> <br />
           <Whisper followCursor 
