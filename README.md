@@ -15,7 +15,7 @@ What is the idea?
 2. [X] I don't need tables in the DB. this is front end only
 
 3. - [X] I need to write a method/function to handle the expanding/collapsing of child forms within the parent form
-   - [ ] I need to write a function for populating the story arc graphic with the user's input,
+   - [X] I need to write a function for populating the story arc graphic with the user's input,
            passing the user's input into the corresponding piece of the story on the arc graphic
 
 4. The front end consists of:
@@ -23,7 +23,7 @@ What is the idea?
       - [X] Each story point has an input and an 'expand' button. When clicked, the button reveals a child form (complete with its own 5 point story
         structure) beneath the corresponding story point. It is collapsible.
     - [X] A story arc graphic. This will serve as a basic visual representation of the user's outlined story.
-          [ ] The content from the form's input fields will populate the corresponding "bubble" on the graph's 5 story points.
+          [X] The content from the form's input fields will populate the corresponding "bubble" on the graph's 5 story points.
           [ ] Each "bubble" will be clickable. On click, the child form's input (if any) will be visible beneath the parent.
 
 **Libraries/Tools** (it helps to have backup libraries for any given functionality)

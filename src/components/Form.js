@@ -8,9 +8,27 @@ import AboutDrawer from './AboutDrawer';
 import Visualize from './Visualize';
 
 const Form = () => {
+
+  const [context, setContext] = useState("")
+  const [catalyst, setCatalyst] = useState("")
+  const [pointOfNoReturn, setPointOfNoReturn] = useState("")
+  const [climax, setClimax] = useState("")
+  const [denouement, setDenouement] = useState("")
   
-  const handleChange = (e) => {
-    console.log(e.target.value)
+  const handleContextChange = (e) => {
+    setContext(e.target.value)
+  }
+  const handleCatalystChange = (e) => {
+    setCatalyst(e.target.value)
+  }
+  const handlePointOfNoReturnChange = (e) => {
+    setPointOfNoReturn(e.target.value)
+  }
+  const handleClimaxChange = (e) => {
+    setClimax(e.target.value)
+  }
+  const handleDenouementChange = (e) => {
+    setDenouement(e.target.value)
   }
 
   return (
@@ -21,7 +39,7 @@ const Form = () => {
   </div>
   <div id="buttonBar">
   <AboutDrawer />
-  <Visualize /* handleChange={handleChange} */ />
+        <Visualize context={context} catalyst={catalyst} pointOfNoReturn={pointOfNoReturn} climax={climax} denouement={denouement} />
   </div>
   <div className="mainFormDiv">
 
@@ -42,7 +60,7 @@ const Form = () => {
     <input type="text"
            name="context-input"
            placeholder="your text here"
-           onChange={handleChange}>
+           onChange={handleContextChange}>
     </input>
       <Collapsible /> <br />
           <Whisper followCursor 
@@ -57,7 +75,8 @@ const Form = () => {
           </Whisper>
     <input type="text"
            name="catalyst-input"
-           placeholder="your text here">
+           placeholder="your text here"
+           onChange={handleCatalystChange}>
     </input> <br />
       <Collapsible /> <br />
           <Whisper followCursor
@@ -72,7 +91,8 @@ const Form = () => {
         </Whisper> 
     <input type="text"
            name="point-of-no-return-input"
-           placeholder="your text here">
+           placeholder="your text here"
+          onChange={handlePointOfNoReturnChange}>
     </input> <br />
       <Collapsible /> <br />
           <Whisper followCursor
@@ -88,7 +108,8 @@ const Form = () => {
         </Whisper>
     <input type="text"
            name="climax-input"
-           placeholder="your text here">
+           placeholder="your text here"
+           onChange={handleClimaxChange}>
     </input> <br />
       <Collapsible /> <br />
         <Whisper followCursor
@@ -106,7 +127,8 @@ const Form = () => {
         </Whisper>
     <input type="text"
            name="denouement-input"
-           placeholder="your text here">
+           placeholder="your text here"
+           onChange={handleDenouementChange}>
     </input> <br />
           <Collapsible /> <br></br>
   </div>

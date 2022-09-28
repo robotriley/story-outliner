@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Drawer, Button } from 'rsuite';
 
-const Visualize = () => {
+const Visualize = ({handleChange, context="", catalyst="", pointOfNoReturn="", climax="", denouement=""} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -26,23 +26,23 @@ const Visualize = () => {
           <img id="blankArc" src='./blankArcBlackBg.png' alt="blank arc"></img>
           <div id='contextBubble'>
             <h6>Context:</h6>
-            {/* <p> /* {handleChange()} </p> */}
+            <p> { context } </p> 
           </div>
           <div id='catalystBubble'>
             <h6>Catalyst:</h6>
-            {/* <p> /* {handleChange()} </p> */}
+            <p> { catalyst } </p>
           </div>
           <div id='pointOfNoReturnBubble'>
             <h6>Point of No Return:</h6>
-            {/* <p> /* {handleChange()} </p> */}
+              <p> {pointOfNoReturn} </p>
           </div>
           <div id='climaxBubble'>
             <h6>Climax:</h6>
-            {/* <p> /* {handleChange()} </p> */}
+              <p> {climax} </p>
           </div>
           <div id='denouementBubble'>
             <h6>Denouement:</h6>
-            {/* <p> /* {handleChange()} </p> */}
+              <p> {denouement} </p>
           </div>
         </div>
         </Drawer.Body>

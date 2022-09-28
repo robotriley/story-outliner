@@ -223,6 +223,7 @@ max-height: 210px;
 }
 
 /* VISUALIZER */
+
 #blankArc {
   max-width: 1400px;
   /* border: solid red; */
@@ -237,22 +238,24 @@ max-height: 210px;
 }
 
 #contextBubble {
+  background-color: black;
+  bottom: 220px;
+  color: cyan;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   position: absolute;
-  bottom: 220px;
   left: 10px;
   border: solid cyan;
-  color: cyan;
   border-width: 7px;
   border-radius: 20px;
   height: 100px;
   width: 150px;
-  background-color: black;
 }
 #catalystBubble {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   position: absolute;
@@ -269,6 +272,7 @@ max-height: 210px;
 #pointOfNoReturnBubble {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   position: absolute;
   top: 210px;
@@ -284,6 +288,7 @@ max-height: 210px;
 #climaxBubble {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   position: absolute;
   top: 30px;
@@ -299,6 +304,7 @@ max-height: 210px;
 #denouementBubble {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   position: absolute;
   bottom: 250px;
