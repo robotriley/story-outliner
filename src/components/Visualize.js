@@ -23,7 +23,7 @@ const Visualize = () => {
         </Drawer.Header>
         <Drawer.Body>
         <div id='visualizerDrawer'>
-          <img id="blankArc" src='./BlankArc.png' alt="blank arc"></img>
+          <img id="blankArc" src='./blankArcBlackBg.png' alt="blank arc"></img>
           <div id='contextBubble'>
             <h6>Context:</h6>
             {/* <p> /* {handleChange()} </p> */}

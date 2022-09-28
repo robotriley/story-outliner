@@ -157,7 +157,7 @@ h2 {
 }
 
 .rs-drawer-body {
-  background-color: white;
+  background-color: black;
 }
 
 .drawerWords1 {
@@ -185,6 +185,7 @@ h2 {
 
 h4 {
   /* border: solid red; */
+  color: #ced4da;
 }
 .drawerImages1 {
   display: flex;
@@ -221,7 +222,7 @@ max-height: 210px;
 
 /* VISUALIZER */
 #blankArc {
-  max-width: 1500px;
+  max-width: 1400px;
   /* border: solid red; */
 }
 
@@ -229,7 +230,8 @@ max-height: 210px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-left: 90px;
+  padding-top: 70px;
+  /* background-color: black; */
 }
 
 #contextBubble {
