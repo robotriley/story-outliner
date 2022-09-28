@@ -25,7 +25,7 @@ const Visualize = ({handleChange, context="", catalyst="", pointOfNoReturn="", c
         <div id='visualizerDrawer'>
           <img id="blankArc" src='./blankArcBlackBg.png' alt="blank arc"></img>
           <div id='contextBubble'>
-            <h6>Context:</h6>
+            <h5>Context:</h5>
             <p> { context } </p> 
           </div>
           <div id='catalystBubble'>
