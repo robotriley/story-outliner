@@ -23,27 +23,29 @@ const Visualize = ({handleChange, context="", catalyst="", pointOfNoReturn="", c
         </Drawer.Header>
         <Drawer.Body>
         <div id='visualizerDrawer'>
-          <img id="blankArc" src='./blankArcBlackBg.png' alt="blank arc"></img>
+          <div id="bubbles">
           <div id='contextBubble'>
             <h5>Context:</h5>
             <p> { context } </p> 
           </div>
           <div id='catalystBubble'>
-            <h6>Catalyst:</h6>
+            <h5>Catalyst:</h5>
             <p> { catalyst } </p>
           </div>
           <div id='pointOfNoReturnBubble'>
-            <h6>Point of No Return:</h6>
+            <h5>Point of No Return:</h5>
               <p> {pointOfNoReturn} </p>
           </div>
           <div id='climaxBubble'>
-            <h6>Climax:</h6>
+            <h5>Climax:</h5>
               <p> {climax} </p>
           </div>
           <div id='denouementBubble'>
-            <h6>Denouement:</h6>
+            <h5>Denouement:</h5>
               <p> {denouement} </p>
+              </div>
           </div>
+          <img id="blankArc" src='./blankArcBlackBg.png' alt="blank arc"></img>
         </div>
         </Drawer.Body>
       </Drawer>

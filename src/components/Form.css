@@ -152,6 +152,10 @@ input {
 
 .rs-drawer-header {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: left;
 }
 
 h2 {
@@ -223,101 +227,130 @@ max-height: 180px;
 
 #blankArc {
   /* border: solid red; */
-  max-width: 1400px;
+  max-width: 1200px;
+  position: absolute;
+  /* z-index: -1; */
 }
 
 #visualizerDrawer {
   /* background-color: black; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid red; */
+  /* justify-content: space-between; */
+  padding-top: 90px;
+  /* z-index: 3; */
+
+}
+
+#bubbles {
+  /* align-items: center; */
+  align-self: center;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-top: 70px;
+  justify-content: center;
+  justify-content:space-evenly;
 }
 
 #contextBubble {
-  /* background-color: black; */
-  /* border: solid cyan; */
-  border-radius: 20px;
-  border-width: 7px;
-  bottom: 220px;
+  background-color: rgba(0, 0, 0, .7);
+  border: solid cyan;
+  border-radius: 10px;
+  border-width: 1px;
+  /* top: 60px; */
   color: cyan;
   display: flex;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-  font-weight: bolder;
-  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  height: auto;
   justify-content: center;
-  left: 10px;
+  /* left: 1px; */
   text-align: center;
-  position: absolute;
-  width: 150px;
+  /* position: absolute; */
+  width: 200px;
+  z-index: 1;
 }
 #catalystBubble {
-  /* background-color: black; */
-  bottom: 280px;
-  /* border: solid yellowgreen; */
-  border-radius: 20px;
-  border-width: 7px;
+  background-color: rgba(0, 0, 0, .7);
+  top: 60px;
+  border: solid yellowgreen;
+  border-radius: 10px;
+  border-width: 1px;
   color: yellowgreen;
   display: flex;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
   flex-direction: column;
-  height: 100px;
+  height: auto;
   justify-content: center;
-  left: 240px;
-  position: absolute;
+  /* left: 240px; */
+  /* position: absolute; */
   text-align: center;
-  width: 150px;
+  width: 220px;
+  z-index: 1;
 }
 #pointOfNoReturnBubble {
-  /* background-color: black; */
-  /* border: solid orange; */
-  border-radius: 20px;
-  border-width: 7px;
+  background-color: rgba(0, 0, 0, .7);
+  border: solid orange;
+  border-radius: 10px;
+  border-width: 1px;
   color: orange;
   display: flex;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
-  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  height: auto;
   justify-content: center;
-  left: 500px;
-  position: absolute;
+  /* left: 500px; */
+  /* position: absolute; */
   text-align: center;
-  top: 210px;
-  width: 150px;
+  top: 60px;
+  width: 220px;
+  z-index: 1;
 }
 #climaxBubble {
-  /* background-color: black; */
-  /* border: solid red; */
+  background-color: rgba(0, 0, 0, .7);
+  /* opacity: 80%; */
+  border: solid red;
   /* border-width: 7px; */
-  border-radius: 20px;
+  border-radius: 10px;
   color: red;
   display: flex;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
-  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  height: auto;
   justify-content: center;
   text-align: center;
-  position: absolute;
-  right: 250px;
-  top: 30px;
-  width: 150px;
+  /* position: absolute; */
+  /* right: 290px; */
+  top: 60px;
+  width: 220px;
+  z-index: 1;
 }
 #denouementBubble {
-  /* background-color: black; */
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 10px;
   border-width: 7px;
-  /* border: solid lightpink; */
-  bottom: 250px;
+  border: solid lightpink;
+  top: 60px;
   color: lightpink;
   display: flex;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
   flex-direction: column;
-  height: 100px;
+  height: auto;
   justify-content: center;
-  position: absolute;
-  right: 60px;
+  /* position: absolute; */
+  /* right: 60px; */
   text-align: center;
-  width: 150px;
+  width: 220px;
+  z-index: 1;
 }

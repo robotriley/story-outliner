@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Drawer, Button } from 'rsuite';
+import useCollapse from 'react-collapsed';
 
 const AboutDrawer = () => {
   const [open, setOpen] = useState(false);
@@ -17,8 +18,9 @@ const AboutDrawer = () => {
               keyboard={true}
               size={'full'}
               onClose={() => setOpen(false)}>
-        <Drawer.Header>
+        <Drawer.Header id="aboutHeader" >
           <h2>Using Story Outliner</h2>
+          <Button appearance="ghost" color="yellow">show me an example</Button>
         </Drawer.Header>
         <Drawer.Body>
         <div>
