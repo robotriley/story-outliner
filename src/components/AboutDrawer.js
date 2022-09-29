@@ -20,7 +20,7 @@ const AboutDrawer = () => {
               onClose={() => setOpen(false)}>
         <Drawer.Header id="aboutHeader" >
           <h2>Using Story Outliner</h2>
-          <Button appearance="ghost" color="yellow">show me an example</Button>
+          {/* <Button appearance="ghost" color="yellow">show me an example</Button> */}
         </Drawer.Header>
         <Drawer.Body>
         <div>

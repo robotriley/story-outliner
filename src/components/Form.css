@@ -14,7 +14,11 @@
 .titles {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  /* justify-content: center; */
+  max-width: 390px;
+  
 }
 
 .content {
@@ -220,7 +224,7 @@ max-height: 180px;
 #buttonBar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* VISUALIZER */
