@@ -15,10 +15,11 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* justify-content: center; */
+  justify-content: center;
   max-width: 390px;
-  
+}
+#favicon {
+  margin-right: 8px;
 }
 
 .content {
@@ -270,9 +271,11 @@ max-height: 180px;
   font-size: 20px;
   font-weight: bold;
   height: auto;
-  justify-content: center;
+  justify-content: column;
   /* left: 1px; */
+  margin: 0px 10px;
   text-align: center;
+  padding: 5px;
   /* position: absolute; */
   width: 200px;
   z-index: 1;
@@ -292,6 +295,8 @@ max-height: 180px;
   height: auto;
   justify-content: center;
   /* left: 240px; */
+  margin: 0px 10px;
+  padding: 5px;
   /* position: absolute; */
   text-align: center;
   width: 220px;
@@ -311,6 +316,8 @@ max-height: 180px;
   height: auto;
   justify-content: center;
   /* left: 500px; */
+  margin: 0px 10px;
+  padding: 5px;
   /* position: absolute; */
   text-align: center;
   top: 60px;
@@ -331,7 +338,9 @@ max-height: 180px;
   font-weight: bold;
   height: auto;
   justify-content: center;
+  margin: 0px 10px;
   text-align: center;
+  padding: 5px;
   /* position: absolute; */
   /* right: 290px; */
   top: 60px;
@@ -352,9 +361,12 @@ max-height: 180px;
   flex-direction: column;
   height: auto;
   justify-content: center;
+  margin: 0px 10px;
+  padding: 5px;
   /* position: absolute; */
   /* right: 60px; */
   text-align: center;
   width: 220px;
   z-index: 1;
 }
+

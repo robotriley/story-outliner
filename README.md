@@ -34,7 +34,7 @@ Stretchies:
   - Persisting data to a db.json
   - Better color scheme (not 0, 0, 0 flat black background)
   - input placeholder text more readable color. (not flat grey)
-  - icon next to the title header
+  - [x] icon next to the title header
 
 
 **Libraries/Tools** (it helps to have backup libraries for any given functionality)

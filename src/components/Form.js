@@ -39,7 +39,7 @@ const Form = () => {
     
 <div>
   <div className='titles'>
-    <img src='./favicon.ico' alt="favicon"></img>
+    <img id="favicon" src='./favicon.ico' alt="favicon"></img>
     <h1>Story Outliner</h1>
 
   </div>
