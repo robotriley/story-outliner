@@ -26,6 +26,17 @@ What is the idea?
           [X] The content from the form's input fields will populate the corresponding "bubble" on the graph's 5 story points.
           [ ] Each "bubble" will be clickable. On click, the child form's input (if any) will be visible beneath the parent.
 
+
+Stretchies:
+
+  - [x] Add <title> to your app so that it doesn't show "React app"
+  - [x] Add / create a favicon so that it doesn't show the React logo
+  - Persisting data to a db.json
+  - Better color scheme (not 0, 0, 0 flat black background)
+  - input placeholder text more readable color. (not flat grey)
+  - icon next to the title header
+
+
 **Libraries/Tools** (it helps to have backup libraries for any given functionality)
 BrowserRouter, useState
 d

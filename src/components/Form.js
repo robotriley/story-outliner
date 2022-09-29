@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
 import { Popover, Whisper } from 'rsuite';
@@ -31,7 +31,12 @@ const Form = () => {
     setDenouement(e.target.value)
   }
 
+  useEffect(() => {
+    document.title = "Story Outliner"
+  }, []);
+
   return (
+    
 <div>
   <div className='titles'>
     <h1>Story Outliner</h1>
