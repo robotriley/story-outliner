@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Drawer, Button } from 'rsuite';
-import useCollapse from 'react-collapsed';
+import { Placeholder } from 'rsuite'
 
 const AboutDrawer = () => {
   const [open, setOpen] = useState(false);
@@ -24,11 +24,13 @@ const AboutDrawer = () => {
         </Drawer.Header>
         <Drawer.Body>
         <div>
+
           <div className='drawerWords1'>
             <h4>A diagram of a narrative arc:</h4>
               <h4>Each "point" in the story is<br />
                 an arc within the larger narrative.</h4>
           </div>
+
           <div className='drawerImages1'>
             <img id='AboutImg' src="./about1DarkGrayBg.png" alt="About1"></img>
             <img id='AboutImg' src="./about2DarkGrayBg.png" alt="About2"></img>

@@ -6,7 +6,7 @@ const Collapsible = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
   return (
     <div>
-      <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()} appearance="link" color='yellow' size="sm" >{isExpanded ? 'collapse' : 'expand'} </Button>
+      <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()} appearance="link" color='yellow' size="lg" >{isExpanded ? 'collapse' : 'expand'} </Button>
       <div {...getCollapseProps()} >
         <div className="content">
           <label htmlFor="contextInput"
