@@ -275,7 +275,7 @@ max-height: 180px;
   font-size: 20px;
   font-weight: bold;
   height: auto;
-  justify-content: column;
+  justify-content:space-around;
   /* left: 1px; */
   margin: 0px 10px;
   text-align: center;
@@ -297,7 +297,7 @@ max-height: 180px;
   font-weight: bold;
   flex-direction: column;
   height: auto;
-  justify-content: center;
+  justify-content: space-around;
   /* left: 240px; */
   margin: 0px 10px;
   padding: 5px;
@@ -318,7 +318,7 @@ max-height: 180px;
   font-size: 20px;
   font-weight: bold;
   height: auto;
-  justify-content: center;
+  justify-content: space-around;
   /* left: 500px; */
   margin: 0px 10px;
   padding: 5px;
@@ -341,7 +341,7 @@ max-height: 180px;
   font-size: 20px;
   font-weight: bold;
   height: auto;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0px 10px;
   text-align: center;
   padding: 5px;
@@ -364,7 +364,7 @@ max-height: 180px;
   font-weight: bold;
   flex-direction: column;
   height: auto;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0px 10px;
   padding: 5px;
   /* position: absolute; */

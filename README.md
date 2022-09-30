@@ -32,8 +32,8 @@ Stretchies:
   - [x] Add <title> to your app so that it doesn't show "React app"
   - [x] Add / create a favicon so that it doesn't show the React logo
   - Persisting data to a db.json
-  - Better color scheme (not 0, 0, 0 flat black background)
-  - input placeholder text more readable color. (not flat grey)
+  - [x] Better color scheme (not 0, 0, 0 flat black background)
+  - [x] input placeholder text more readable color. (not flat grey)
   - [x] icon next to the title header
 
 
