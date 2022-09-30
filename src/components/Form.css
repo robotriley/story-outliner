@@ -1,6 +1,7 @@
 .App {
   align-items: center;
-  background-color: black;
+  background-color: #202125;
+  /* background-color: black; */
   color: white;
   display: flex;
   flex-direction: column;
@@ -44,13 +45,14 @@ input {
   background-color: transparent;
   border-radius: 5px;
   border-style: solid;
+  border-color: whitesmoke;
   color: white;
   font-size: medium;
   width: 90%;
 }
 
 ::placeholder {
-  color: gray;
+  color: whitesmoke;
 }
 
 .mainFormDiv {
@@ -83,7 +85,7 @@ input {
 }
 
 .climaxLabel {
-  color: red;
+  color:tomato;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -142,8 +144,8 @@ input {
 }
 .climaxPopover {
   background-color: black;
-  border: dashed red;
-  color: red;
+  border: dashed tomato;
+  color: tomato;
   font-weight: 600;
 }
 .denouementPopover {
@@ -156,7 +158,8 @@ input {
 /* DRAWER 1 */
 
 .rs-drawer-header {
-  background-color: black;
+  /* background-color: black; */
+  background-color: #202125;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -168,7 +171,8 @@ h2 {
 }
 
 .rs-drawer-body {
-  background-color: black;
+  /* background-color: black; */
+  background-color: #202125;
 }
 
 .drawerWords1 {
@@ -327,10 +331,10 @@ max-height: 180px;
 #climaxBubble {
   background-color: rgba(0, 0, 0, .7);
   /* opacity: 80%; */
-  border: solid red;
+  border: solid tomato;
   /* border-width: 7px; */
   border-radius: 10px;
-  color: red;
+  color: tomato;
   display: flex;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
@@ -369,4 +373,3 @@ max-height: 180px;
   width: 220px;
   z-index: 1;
 }
-
