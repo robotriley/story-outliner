@@ -263,7 +263,7 @@ max-height: 180px;
 }
 
 #contextBubble {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(20, 20, 20, .7);
   border: solid cyan;
   border-radius: 10px;
   border-width: 1px;
@@ -285,7 +285,7 @@ max-height: 180px;
   z-index: 1;
 }
 #catalystBubble {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(20, 20, 20, .7);
   top: 60px;
   border: solid yellowgreen;
   border-radius: 10px;
@@ -307,7 +307,7 @@ max-height: 180px;
   z-index: 1;
 }
 #pointOfNoReturnBubble {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(20, 20, 20, .7);
   border: solid orange;
   border-radius: 10px;
   border-width: 1px;
@@ -329,7 +329,7 @@ max-height: 180px;
   z-index: 1;
 }
 #climaxBubble {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(20, 20, 20, .7);
   /* opacity: 80%; */
   border: solid tomato;
   /* border-width: 7px; */
@@ -352,7 +352,7 @@ max-height: 180px;
   z-index: 1;
 }
 #denouementBubble {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(20, 20, 20, .7);
   border-radius: 10px;
   border-width: 7px;
   border: solid lightpink;

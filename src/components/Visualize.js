@@ -45,7 +45,7 @@ const Visualize = ({handleChange, context="", catalyst="", pointOfNoReturn="", c
               <p> {denouement} </p>
               </div>
           </div>
-          <img id="blankArc" src='./blankArcBlackBg.png' alt="blank arc"></img>
+            <img id="blankArc" src='./blankArcDarkGreyBg.png' alt="blank arc"></img>
         </div>
         </Drawer.Body>
       </Drawer>
