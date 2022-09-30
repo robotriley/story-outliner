@@ -123,34 +123,39 @@ input {
 
 /* STORY POINT POPOVERS */
 .contextPopover {
-  background-color: black;
+  background-color: rgba(20, 20, 20, .8);
   border: dashed cyan;
+  border-radius: 10px;
   color: cyan;
   font-weight: 600;
 }
 
 .catalystPopover {
-  background-color: black;
+  background-color: rgba(20, 20, 20, .8);
   border: dashed yellowgreen;
+  border-radius: 10px;
   color: yellowgreen;
   font-weight: 600;
 }
 
 .pointOfNoReturnPopover {
-  background-color: black;
+  background-color: rgba(20, 20, 20, .8);
   border: dashed orange;
+  border-radius: 10px;
   color: orange;
   font-weight: 600;
 }
 .climaxPopover {
-  background-color: black;
+  background-color: rgba(20, 20, 20, .8);
   border: dashed tomato;
+  border-radius: 10px;
   color: tomato;
   font-weight: 600;
 }
 .denouementPopover {
-  background-color: black;
+  background-color: rgba(20, 20, 20, .8);
   border: dashed lightpink;
+  border-radius: 10px;
   color: lightpink;
   font-weight: 600;
 }

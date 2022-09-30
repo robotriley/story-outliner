@@ -4,7 +4,7 @@ import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
 
-const Visualize = ({handleChange, context="", catalyst="", pointOfNoReturn="", climax="", denouement=""} ) => {
+const Visualize = ({ context="", catalyst="", pointOfNoReturn="", climax="", denouement=""} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
