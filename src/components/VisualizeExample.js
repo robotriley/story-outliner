@@ -34,17 +34,17 @@ const VisualizeExample = () => {
           <div id="bubbles">
           <div id='contextBubble'>
             <h5>Context:</h5>
-                <p> A narrow escape in space </p>
+                <p> A Narrow Escape in Space </p>
                 <ExampleCollapsibleContext /> 
           </div>
           <div id='catalystBubble'>
             <h5>Catalyst:</h5>
-                <p> A purchase leads to adventure </p>
+                <p> A Purchase Leads to Adventure </p>
                 <ExampleCollapsibleCatalyst />
           </div>
           <div id='pointOfNoReturnBubble'>
             <h5>Point of No Return:</h5>
-            <p> Belly of the beast </p>
+            <p> Belly of the Beast </p>
                 <ExampleCollapsiblePoint />
           </div>
           <div id='climaxBubble'>
@@ -54,7 +54,7 @@ const VisualizeExample = () => {
           </div>
           <div id='denouementBubble'>
             <h5>Denouement:</h5>
-              <p> Big Ceremony </p>
+              <p> Triumphant Ceremony </p>
                 <ExampleCollapsibleDenouement />
               </div>
           </div>

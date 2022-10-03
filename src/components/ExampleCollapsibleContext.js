@@ -24,7 +24,7 @@ const ExampleCollapsibleContext = () => {
           <h5 className='innerContent'>Darth Vader boards the Cruiser.</h5><br />
           <label htmlFor="pointOfNoReturnInput"
             className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
-          <h5 className='innerContent'>Princess Leia loads secret transmissions into R2D2.</h5><br />
+          <h5 className='innerContent'>Princess Leia loads secret data into R2D2.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />
           <h5 className='innerContent'>Leia captured, R2D2 & C-3PO blast off in an escape pod. </h5><br />
