@@ -2,23 +2,17 @@ import React from 'react'
 import useCollapse from 'react-collapsed'
 import { Button } from 'rsuite'
 
-const Collapsible = ({ innerContext, setInnerContext, innerCatalyst, setInnerCatalyst }) => {
+const Collapsible = ({ inner, setInner }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
 
-  const handleInnerContextChange = (e) => {
+  const handleChange = (e) => {
     let {name, value} = e.target
-    setInnerContext({
-      ...innerContext,
+    setInner({
+      ...inner,
       [name]: value
     })
   }
-  // const handleInnerCatalystChange = (e) => {
-  //   let {name, value} = e.target
-  //   setInnerCatalyst({
-  //     ...innerCatalyst,
-  //     [name]: value
-  //   })
-  // }
+
   return (
     <div>
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
@@ -36,24 +30,24 @@ const Collapsible = ({ innerContext, setInnerContext, innerCatalyst, setInnerCat
         <div className="content">
           <label htmlFor="contextInput"
             className="innerContextLabel">Context</label> <br />
-          <input onChange={handleInnerContextChange}
+          <input onChange={handleChange}
             name="context"
                  placeholder='your text here'></input><br /><br />
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst</label> <br />
-          <input name="catalyst" onChange={handleInnerContextChange}
+          <input name="catalyst" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="pointOfNoReturnInput"
             className="innerPointOfNoReturnLabel" >Point of No Return</label> <br />
-          <input name="pointOfNoReturn" //onChange={handleChange}
+          <input name="pointOfNoReturn" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax</label> <br />
-          <input name="climax" //onChange={handleChange}
+          <input name="climax" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="denouementInput"
             className="innerDenouementLabel" >Denouement</label> <br />
-          <input name="denouement"//onChange={handleChange}
+          <input name="denouement" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
         </div>
       </div>

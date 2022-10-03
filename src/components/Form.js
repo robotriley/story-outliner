@@ -22,13 +22,34 @@ const Form = () => {
     climax: "",
     denouement: ""
   })
-  // const [innerCatalyst, setInnerCatalyst] = useState({
-  //   context: "",
-  //   catalyst: "",
-  //   pointOfNoReturn: "",
-  //   climax: "",
-  //   denouement: ""
-  // })
+  const [innerCatalyst, setInnerCatalyst] = useState({
+    context: "",
+    catalyst: "",
+    pointOfNoReturn: "",
+    climax: "",
+    denouement: ""
+  })
+  const [innerPoint, setInnerPoint] = useState({
+    context: "",
+    catalyst: "",
+    pointOfNoReturn: "",
+    climax: "",
+    denouement: ""
+  })
+  const [innerClimax, setInnerClimax] = useState({
+    context: "",
+    catalyst: "",
+    pointOfNoReturn: "",
+    climax: "",
+    denouement: ""
+  })
+  const [innerDenouement, setInnerDenouement] = useState({
+    context: "",
+    catalyst: "",
+    pointOfNoReturn: "",
+    climax: "",
+    denouement: ""
+  })
   
   const handleContextChange = (e) => {
     setContext(e.target.value)
@@ -67,7 +88,10 @@ const Form = () => {
         climax={climax}
         denouement={denouement}
         innerContext={innerContext}
-       // innerCatalyst={innerCatalyst}
+        innerCatalyst={innerCatalyst}
+        innerPoint={innerPoint}
+        innerClimax={innerClimax}
+        innerDenouement={innerDenouement}
         />
   </div>
   <div className="mainFormDiv">
@@ -91,7 +115,7 @@ const Form = () => {
            placeholder="your text here"
            onChange={handleContextChange}>
     </input>
-          <Collapsible innerContext={innerContext} setInnerContext={setInnerContext} /> <br />
+          <Collapsible inner={innerContext} setInner={setInnerContext} />
           <Whisper followCursor 
                    speaker={<Popover className='catalystPopover' arrow={false} >
                      <h6>Inciting Incident, Exciting Incident, Rising Action, <br />
@@ -107,11 +131,11 @@ const Form = () => {
     <input type="text"
            name="catalyst-input"
            placeholder="your text here"
-           //onChange={handleCatalystChange}
+           onChange={handleCatalystChange}
            >
     </input> <br />
-      <Collapsible // innerCatalyst={innerCatalyst} setInnerCatalyst={setInnerCatalyst}
-      /> <br />
+      <Collapsible inner={innerCatalyst} setInner={setInnerCatalyst}
+      />
           <Whisper followCursor
                    speaker={<Popover className='pointOfNoReturnPopover' arrow={false} >
             <h6>New and Unplanned Direction, "You Can't Go Home Again," <br />
@@ -129,7 +153,7 @@ const Form = () => {
            placeholder="your text here"
           onChange={handlePointOfNoReturnChange}>
     </input> <br />
-      <Collapsible /> <br />
+      <Collapsible inner={innerPoint} setInner={setInnerPoint} /> <br />
           <Whisper followCursor
                    speaker={<Popover className='climaxPopover' arrow={false} >
             <h6>Main Event, The Highest Point of Tension, Decisive Moment, <br />
@@ -147,7 +171,7 @@ const Form = () => {
            placeholder="your text here"
            onChange={handleClimaxChange}>
     </input> <br />
-      <Collapsible /> <br />
+      <Collapsible inner={innerClimax} setInner={setInnerClimax} />
         <Whisper followCursor
             speaker={<Popover className='denouementPopover' arrow={false} >
           <h6>The Lasting Image, Resolution, Conclusion, <br />
@@ -167,7 +191,7 @@ const Form = () => {
            placeholder="your text here"
            onChange={handleDenouementChange}>
     </input> <br />
-          <Collapsible /> <br></br>
+          <Collapsible inner={innerDenouement} setInner={setInnerDenouement} /> <br></br>
   </div>
   </div>
 </div>

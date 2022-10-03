@@ -4,7 +4,7 @@ import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
 
-const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax = "", denouement = "", innerContext, innerCatalyst} ) => {
+const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax = "", denouement = "", innerContext, innerCatalyst, innerPoint, innerClimax, innerDenouement} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -30,28 +30,28 @@ const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax =
           <div id='contextBubble'>
             <h5>Context:</h5>
             <p> { context } </p>
-                <VisualizerCollapsible innerContext={innerContext} /> 
+                <VisualizerCollapsible inner={innerContext} /> 
           </div>
           <div id='catalystBubble'>
             <h5>Catalyst:</h5>
             <p> { catalyst } </p>
-                <VisualizerCollapsible innerContext={innerContext}
+                <VisualizerCollapsible inner={innerCatalyst}
                 />
           </div>
           <div id='pointOfNoReturnBubble'>
             <h5>Point of No Return:</h5>
               <p> {pointOfNoReturn} </p>
-                <VisualizerCollapsible innerContext={innerContext} />
+                <VisualizerCollapsible inner={innerPoint} />
           </div>
           <div id='climaxBubble'>
             <h5>Climax:</h5>
               <p> {climax} </p>
-                <VisualizerCollapsible innerContext={innerContext} />
+                <VisualizerCollapsible inner={innerClimax} />
           </div>
           <div id='denouementBubble'>
             <h5>Denouement:</h5>
               <p> {denouement} </p>
-                <VisualizerCollapsible innerContext={innerContext} />
+                <VisualizerCollapsible inner={innerDenouement} />
               </div>
           </div>
             <img id="blankArc" src='./blankArcDarkGreyBg.png' alt="blank arc"></img>

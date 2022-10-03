@@ -2,12 +2,12 @@ import { React, useState } from 'react'
 import useCollapse from 'react-collapsed'
 import { Button } from 'rsuite'
 
-const VisualizerCollapsible = ({ innerContext, innerCatalyst }) => {
+const VisualizerCollapsible = ({ inner }) => {
   // const [contextContext, setContextContext] = useState("hello")
 
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
   
-  if (!innerContext)
+  if (!inner)
   return <div></div>
 
   return (
@@ -22,15 +22,15 @@ const VisualizerCollapsible = ({ innerContext, innerCatalyst }) => {
       <div {...getCollapseProps()} >
         <div>
           <label className='innerContextLabel'>Context</label> <br />
-          <h6>{innerContext.context}</h6>
+          <h6>{inner.context}</h6>
           <label className="innerCatalystLabel">Catalyst</label> <br />
-          <h6>{innerContext.catalyst}</h6>
+          <h6>{inner.catalyst}</h6>
           <label className="innerPointOfNoReturnLabel" >Point of No Return</label> <br />
-          <h6>{innerContext.pointOfNoReturn}</h6>
+          <h6>{inner.pointOfNoReturn}</h6>
           <label className="innerClimaxLabel" >Climax</label> <br />
-          <h6>{innerContext.climax}</h6>
+          <h6>{inner.climax}</h6>
           <label className="innerDenouementLabel" >Denouement</label> <br />
-          <h6>{innerContext.denouement}</h6>
+          <h6>{inner.denouement}</h6>
         </div>
       </div>
     </div>
