@@ -318,20 +318,17 @@ max-height: 180px;
   background-color: rgba(20, 20, 20, .7);
   border: solid orange;
   border-radius: 10px 10px 0px 0px;
-  border-width: 1px;
   color: orange;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
   height: auto;
   justify-content: space-around;
-  /* left: 500px; */
   margin: 0px 10px;
   padding: 5px;
-  /* position: absolute; */
-  text-align:center;
+  text-align: center;
   top: 60px;
   width: 220px;
   z-index: 1;
