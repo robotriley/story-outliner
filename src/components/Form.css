@@ -109,6 +109,7 @@ input {
 .innerPointOfNoReturnLabel {
   color: orange;
   font-weight: 700;
+  font-size: 0.95em;
 }
 
 .innerClimaxLabel {
@@ -288,7 +289,7 @@ max-height: 180px;
   text-align: center;
   padding: 5px;
   /* position: absolute; */
-  width: 200px;
+  width: 220px;
   z-index: 1;
 }
 #catalystBubble {
@@ -320,7 +321,7 @@ max-height: 180px;
   border-width: 1px;
   color: orange;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
@@ -330,7 +331,7 @@ max-height: 180px;
   margin: 0px 10px;
   padding: 5px;
   /* position: absolute; */
-  text-align: center;
+  text-align:center;
   top: 60px;
   width: 220px;
   z-index: 1;
