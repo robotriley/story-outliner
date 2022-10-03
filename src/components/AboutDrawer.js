@@ -32,8 +32,8 @@ const AboutDrawer = () => {
           </div>
 
           <div className='drawerImages1'>
-            <img id='AboutImg' src="./about1DarkGrayBg.png" alt="About1"></img>
-            <img id='AboutImg' src="./about2DarkGrayBg.png" alt="About2"></img>
+              <img id='AboutImg' src="./about1DarkGrayBgNewColors.png" alt="About1"></img>
+              <img id='AboutImg' src="./about2DarkGrayBgNewColors.png" alt="About2"></img>
           </div>
           <br />
             <div className='drawerWords2'>
@@ -42,8 +42,8 @@ const AboutDrawer = () => {
                 with a simply laid out plan.</h4>
             </div>
           <div className='drawerImages2'>
-            <img id='AboutImg' src="./about3DarkGrayBg.png" alt="About1"></img>
-            <img id='AboutImg' src="./about4DarkGrayBg.png" alt="About2"></img>
+              <img id='AboutImg' src="./about3DarkGrayBgNewColors.png" alt="About1"></img>
+              <img id='AboutImg' src="./about4DarkGrayBgNewColors.png" alt="About2"></img>
           </div>
         </div>
         </Drawer.Body>
