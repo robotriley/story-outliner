@@ -8,7 +8,7 @@ import AboutDrawer from './AboutDrawer';
 import Visualize from './Visualize';
 
 const Form = () => {
-
+  const [title, setTitle] = useState("")
   const [context, setContext] = useState("")
   const [catalyst, setCatalyst] = useState("")
   const [pointOfNoReturn, setPointOfNoReturn] = useState("")
@@ -67,6 +67,10 @@ const Form = () => {
     setDenouement(e.target.value)
   }
 
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value)
+  }
+
   useEffect(() => {
     document.title = "Story Outliner"
   }, []);
@@ -75,7 +79,10 @@ const Form = () => {
     
 <div>
   <div className='titles'>
-    <img id="favicon" src='./favicon.ico' alt="favicon"></img>
+    <img id="favicon"
+         src='./favicon.ico'
+         alt="favicon"></img>
+    
     <h1>Story Outliner</h1>
 
   </div>
@@ -92,9 +99,15 @@ const Form = () => {
         innerPoint={innerPoint}
         innerClimax={innerClimax}
         innerDenouement={innerDenouement}
+        title={title}
         />
   </div>
   <div className="mainFormDiv">
+    {/* TITLE INPUT */}
+      <input type="text"
+             placeholder="Title of Story"
+             onChange={handleTitleChange}>
+             </input>
 
   <div name="mainOutlineForm">
           <Whisper followCursor 
@@ -153,7 +166,7 @@ const Form = () => {
            placeholder="your text here"
           onChange={handlePointOfNoReturnChange}>
     </input> <br />
-      <Collapsible inner={innerPoint} setInner={setInnerPoint} /> <br />
+      <Collapsible inner={innerPoint} setInner={setInnerPoint} />
           <Whisper followCursor
                    speaker={<Popover className='climaxPopover' arrow={false} >
             <h6>Main Event, The Highest Point of Tension, Decisive Moment, <br />

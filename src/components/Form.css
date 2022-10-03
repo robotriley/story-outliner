@@ -52,7 +52,7 @@ input {
 }
 
 ::placeholder {
-  color: whitesmoke;
+  color: rgb(140, 140, 140);
 }
 
 .mainFormDiv {

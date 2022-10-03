@@ -4,7 +4,7 @@ import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
 
-const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax = "", denouement = "", innerContext, innerCatalyst, innerPoint, innerClimax, innerDenouement} ) => {
+const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax = "", denouement = "", innerContext, innerCatalyst, innerPoint, innerClimax, innerDenouement, title=""} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -22,7 +22,7 @@ const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax =
               size={'full'}
               onClose={() => setOpen(false)}>
         <Drawer.Header>
-          <h2>Story Arc Visualizer</h2>
+          <h2>{title ? title : "Outline" }</h2>
         </Drawer.Header>
         <Drawer.Body>
         <div id='visualizerDrawer'>
