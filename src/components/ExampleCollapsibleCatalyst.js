@@ -2,7 +2,7 @@ import React from 'react'
 import useCollapse from 'react-collapsed'
 import { Button } from 'rsuite'
 
-const ExampleCollapsible = () => {
+const ExampleCollapsibleCatalyst = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
 
   return (
@@ -18,23 +18,23 @@ const ExampleCollapsible = () => {
         <div className="content">
           <label htmlFor="contextInput"
             className="innerContextLabel">Context:</label> <br />
-          <h5 className='innerContent'>An Imperial Star Destroyer captures a Rebel Cruiser</h5><br />
+          <h5 className='innerContent'>Droids captured by Jawas, sold to Uncle Owen and Luke.</h5><br />
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
-          <h5 className='innerContent'>Darth Vader boards the Cruiser</h5><br />
+          <h5 className='innerContent'>While cleaning R2, Luke sees Leia's plea for help.</h5><br />
           <label htmlFor="pointOfNoReturnInput"
             className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
-          <h5 className='innerContent'>Princess Leia loads secret transmissions into R2D2</h5><br />
+          <h5 className='innerContent'>"Ben" Kenobi rescues Luke and tells him of the Jedi Knights.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />
-          <h5 className='innerContent'>Leia captured, R2D2 & C-3PO blast off in an escape pod. </h5><br />
+          <h5 className='innerContent'>Luke receives his father's lightsaber.</h5><br />
           <label htmlFor="denouementInput"
             className="innerDenouementLabel" >Denouement:</label> <br />
-          <h5 className='innerContent'>R2 & 3PO's escape pod careens toward Tatooine.</h5><br />
+          <h5 className='innerContent'>Luke refuses Obi Wan's offer to accompany him to Alderaan.</h5><br />
         </div>
       </div>
     </div>
   )
 
 }
-export default ExampleCollapsible;
+export default ExampleCollapsibleCatalyst;

@@ -3,6 +3,7 @@ import { Drawer, Button } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import ExampleCollapsibleContext from './ExampleCollapsibleContext';
+import ExampleCollapsibleCatalyst from './ExampleCollapsibleCatalyst';
 import VisualizerCollapsible from './VisualizerCollapsible';
 
 const VisualizeExample = () => {
@@ -36,7 +37,7 @@ const VisualizeExample = () => {
           <div id='catalystBubble'>
             <h5>Catalyst:</h5>
                 <p> A purchase leads to adventure </p>
-                {/* <ExampleCollapsible /> */}
+                <ExampleCollapsibleCatalyst />
           </div>
           <div id='pointOfNoReturnBubble'>
             <h5>Point of No Return:</h5>
