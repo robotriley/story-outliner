@@ -22,15 +22,15 @@ const VisualizerCollapsible = ({ inner }) => {
       <div {...getCollapseProps()} >
         <div>
           <label className='innerContextLabel'>Context</label> <br />
-          <h6>{inner.context}</h6>
+          <h6 className='innerContent'>{inner.context}</h6>
           <label className="innerCatalystLabel">Catalyst</label> <br />
-          <h6>{inner.catalyst}</h6>
+          <h6 className='innerContent'>{inner.catalyst}</h6>
           <label className="innerPointOfNoReturnLabel" >Point of No Return</label> <br />
-          <h6>{inner.pointOfNoReturn}</h6>
+          <h6 className='innerContent'>{inner.pointOfNoReturn}</h6>
           <label className="innerClimaxLabel" >Climax</label> <br />
-          <h6>{inner.climax}</h6>
+          <h6 className='innerContent'>{inner.climax}</h6>
           <label className="innerDenouementLabel" >Denouement</label> <br />
-          <h6>{inner.denouement}</h6>
+          <h6 className='innerContent'>{inner.denouement}</h6>
         </div>
       </div>
     </div>

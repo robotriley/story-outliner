@@ -121,6 +121,10 @@ input {
   font-weight: 700;
 }
 
+.innerContent {
+  color: white;
+}
+
 /* STORY POINT POPOVERS */
 .contextPopover {
   background-color: rgba(20, 20, 20, .8);
