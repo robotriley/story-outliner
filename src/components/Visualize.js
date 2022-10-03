@@ -4,7 +4,7 @@ import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
 
-const Visualize = ({ context="", catalyst="", pointOfNoReturn="", climax="", denouement=""} ) => {
+const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax = "", denouement = "", innerContext, innerCatalyst} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -30,27 +30,27 @@ const Visualize = ({ context="", catalyst="", pointOfNoReturn="", climax="", den
           <div id='contextBubble'>
             <h5>Context:</h5>
             <p> { context } </p>
-            <VisualizerCollapsible /> 
+                <VisualizerCollapsible innerContext={innerContext} /> 
           </div>
           <div id='catalystBubble'>
             <h5>Catalyst:</h5>
             <p> { catalyst } </p>
-            <VisualizerCollapsible />
+                <VisualizerCollapsible innerCatalyst={innerCatalyst} />
           </div>
           <div id='pointOfNoReturnBubble'>
             <h5>Point of No Return:</h5>
               <p> {pointOfNoReturn} </p>
-              <VisualizerCollapsible />
+                <VisualizerCollapsible innerContext={innerContext} />
           </div>
           <div id='climaxBubble'>
             <h5>Climax:</h5>
               <p> {climax} </p>
-              <VisualizerCollapsible />
+                <VisualizerCollapsible innerContext={innerContext} />
           </div>
           <div id='denouementBubble'>
             <h5>Denouement:</h5>
               <p> {denouement} </p>
-              <VisualizerCollapsible />
+                <VisualizerCollapsible innerContext={innerContext} />
               </div>
           </div>
             <img id="blankArc" src='./blankArcDarkGreyBg.png' alt="blank arc"></img>
