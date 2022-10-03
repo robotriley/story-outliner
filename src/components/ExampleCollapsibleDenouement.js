@@ -30,7 +30,7 @@ const ExampleCollapsibleDenouement = () => {
           <h5 className='innerContent'>Our heroes turn and accept the applause of the rebels.</h5><br />
           <label htmlFor="denouementInput"
             className="innerDenouementLabel" >Denouement:</label> <br />
-          <h5 className='innerContent'>Chewie roars questioningly because he doesn't get a medal, for some reason.</h5><br />
+          <h5 className='innerContent'>Chewie growls questioningly: "what about my medal?"</h5><br />
         </div>
       </div>
     </div>

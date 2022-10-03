@@ -18,7 +18,7 @@ const ExampleCollapsibleClimax = () => {
         <div className="content">
           <label htmlFor="contextInput"
             className="innerContextLabel">Context:</label> <br />
-          <h5 className='innerContent'>The Rebels discuss the Death Star's hidden weakness</h5><br />
+          <h5 className='innerContent'>The Rebels discuss the Death Star's hidden weakness.</h5><br />
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
           <h5 className='innerContent'>Luke joins the rogue squadron in an X-Wing starfighter.</h5><br />

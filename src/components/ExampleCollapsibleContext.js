@@ -18,13 +18,13 @@ const ExampleCollapsibleContext = () => {
         <div className="content">
           <label htmlFor="contextInput"
             className="innerContextLabel">Context:</label> <br />
-          <h5 className='innerContent'>An Imperial Star Destroyer captures a Rebel Cruiser</h5><br />
+          <h5 className='innerContent'>An Imperial Star Destroyer captures a Rebel Cruiser.</h5><br />
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
-          <h5 className='innerContent'>Darth Vader boards the Cruiser</h5><br />
+          <h5 className='innerContent'>Darth Vader boards the Cruiser.</h5><br />
           <label htmlFor="pointOfNoReturnInput"
             className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
-          <h5 className='innerContent'>Princess Leia loads secret transmissions into R2D2</h5><br />
+          <h5 className='innerContent'>Princess Leia loads secret transmissions into R2D2.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />
           <h5 className='innerContent'>Leia captured, R2D2 & C-3PO blast off in an escape pod. </h5><br />

@@ -21,16 +21,16 @@ const ExampleCollapsiblePoint = () => {
           <h5 className='innerContent'>Luke discovers his home and family destroyed.</h5><br />
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
-          <h5 className='innerContent'>Luke and Obi Wan meet Han and Chewbacca. They fly towards planet Alderaan</h5><br />
+          <h5 className='innerContent'>Luke & Obi-Wan meet Han & Chewbacca. They escape towards Alderaan.</h5><br />
           <label htmlFor="pointOfNoReturnInput"
             className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
-          <h5 className='innerContent'>The Death Star destroys Alderaan and captures the Millenium Falcon.</h5><br />
+          <h5 className='innerContent'>The Death Star destroys Alderaan, captures the Millenium Falcon.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />
-          <h5 className='innerContent'>Luke, Chewbacca and Han rescue Leia. Obi-Wan sacrifices himself.</h5><br />
+          <h5 className='innerContent'>Luke, Han and Chewbacca rescue Leia. Obi-Wan sacrifices himself.</h5><br />
           <label htmlFor="denouementInput"
             className="innerDenouementLabel" >Denouement:</label> <br />
-          <h5 className='innerContent'>The rest of the group escapes to a rebel base on Yavin IV.</h5><br />
+          <h5 className='innerContent'>The group escapes to a rebel base on Yavin IV.</h5><br />
         </div>
       </div>
     </div>
