@@ -35,7 +35,8 @@ const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax =
           <div id='catalystBubble'>
             <h5>Catalyst:</h5>
             <p> { catalyst } </p>
-                <VisualizerCollapsible innerCatalyst={innerCatalyst} />
+                <VisualizerCollapsible innerContext={innerContext}
+                />
           </div>
           <div id='pointOfNoReturnBubble'>
             <h5>Point of No Return:</h5>

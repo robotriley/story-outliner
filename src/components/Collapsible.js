@@ -12,13 +12,13 @@ const Collapsible = ({ innerContext, setInnerContext, innerCatalyst, setInnerCat
       [name]: value
     })
   }
-  const handleInnerCatalystChange = (e) => {
-    let {name, value} = e.target
-    setInnerCatalyst({
-      ...innerCatalyst,
-      [name]: value
-    })
-  }
+  // const handleInnerCatalystChange = (e) => {
+  //   let {name, value} = e.target
+  //   setInnerCatalyst({
+  //     ...innerCatalyst,
+  //     [name]: value
+  //   })
+  // }
   return (
     <div>
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
@@ -41,7 +41,7 @@ const Collapsible = ({ innerContext, setInnerContext, innerCatalyst, setInnerCat
                  placeholder='your text here'></input><br /><br />
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst</label> <br />
-          <input name="catalyst" onChange={handleInnerCatalystChange}
+          <input name="catalyst" onChange={handleInnerContextChange}
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="pointOfNoReturnInput"
             className="innerPointOfNoReturnLabel" >Point of No Return</label> <br />

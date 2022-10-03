@@ -22,13 +22,13 @@ const Form = () => {
     climax: "",
     denouement: ""
   })
-  const [innerCatalyst, setInnerCatalyst] = useState({
-    context: "",
-    catalyst: "",
-    pointOfNoReturn: "",
-    climax: "",
-    denouement: ""
-  })
+  // const [innerCatalyst, setInnerCatalyst] = useState({
+  //   context: "",
+  //   catalyst: "",
+  //   pointOfNoReturn: "",
+  //   climax: "",
+  //   denouement: ""
+  // })
   
   const handleContextChange = (e) => {
     setContext(e.target.value)
@@ -67,7 +67,8 @@ const Form = () => {
         climax={climax}
         denouement={denouement}
         innerContext={innerContext}
-        innerCatalyst={innerCatalyst} />
+       // innerCatalyst={innerCatalyst}
+        />
   </div>
   <div className="mainFormDiv">
 
@@ -106,9 +107,11 @@ const Form = () => {
     <input type="text"
            name="catalyst-input"
            placeholder="your text here"
-           onChange={handleCatalystChange}>
+           //onChange={handleCatalystChange}
+           >
     </input> <br />
-      <Collapsible innerCatalyst={innerCatalyst} setInnerCatalyst={setInnerCatalyst} /> <br />
+      <Collapsible // innerCatalyst={innerCatalyst} setInnerCatalyst={setInnerCatalyst}
+      /> <br />
           <Whisper followCursor
                    speaker={<Popover className='pointOfNoReturnPopover' arrow={false} >
             <h6>New and Unplanned Direction, "You Can't Go Home Again," <br />

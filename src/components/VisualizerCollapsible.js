@@ -6,6 +6,10 @@ const VisualizerCollapsible = ({ innerContext, innerCatalyst }) => {
   // const [contextContext, setContextContext] = useState("hello")
 
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
+  
+  if (!innerContext)
+  return <div></div>
+
   return (
     <div>
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
@@ -18,7 +22,7 @@ const VisualizerCollapsible = ({ innerContext, innerCatalyst }) => {
       <div {...getCollapseProps()} >
         <div>
           <label className='innerContextLabel'>Context</label> <br />
-          <h6>{innerContext.context}</h6><br />
+          <h6>{innerContext.context}</h6>
           <label className="innerCatalystLabel">Catalyst</label> <br />
           <h6>{innerContext.catalyst}</h6>
           <label className="innerPointOfNoReturnLabel" >Point of No Return</label> <br />
