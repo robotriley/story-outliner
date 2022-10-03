@@ -109,7 +109,7 @@ input {
 .innerPointOfNoReturnLabel {
   color: orange;
   font-weight: 700;
-  font-size: 0.95em;
+  font-size: 0.90em;
 }
 
 .innerClimaxLabel {
@@ -377,4 +377,8 @@ max-height: 180px;
   text-align: center;
   width: 220px;
   z-index: 1;
+}
+
+.exampleButton1 {
+  margin-left: 30px;
 }
