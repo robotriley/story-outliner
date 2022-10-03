@@ -24,14 +24,14 @@ What is the idea?
         structure) beneath the corresponding story point. It is collapsible.
     - [X] A story arc graphic. This will serve as a basic visual representation of the user's outlined story.
           [X] The content from the form's input fields will populate the corresponding "bubble" on the graph's 5 story points.
-          [ ] Each "bubble" will be clickable. On click, the child form's input (if any) will be visible beneath the parent.
+          [X] Each "bubble" will be clickable. On click, the child form's input (if any) will be visible beneath the parent.
 
 
 Stretchies:
 
   - [x] Add <title> to your app so that it doesn't show "React app"
   - [x] Add / create a favicon so that it doesn't show the React logo
-  - Persisting data to a db.json
+  - [ ] Persisting data to a db.json
   - [x] Better color scheme (not 0, 0, 0 flat black background)
   - [x] input placeholder text more readable color. (not flat grey)
   - [x] icon next to the title header
