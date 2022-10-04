@@ -1,6 +1,7 @@
 {
   "outlines": [
     {
+      "id": 0,
       "title": "test",
       "context": {
         "text": "the beginning",
@@ -42,6 +43,50 @@
         "innerClimax": "innerClimax",
         "innerDenouement": "innerDenouement"
       }
+    },
+    {
+      "title": "Star Wars (1977)",
+      "context": {
+        "text": "A Narrow Escape in Space",
+        "innerContext": "An Imperial Star Destroyer captures a Rebel Cruiser.",
+        "innerCatalyst": "Darth Vader boards the Cruiser.",
+        "innerPoint": "Princess Leia loads secret data into R2D2.",
+        "innerClimax": "Leia captured, R2D2 & C-3PO blast off in an escape pod.",
+        "innerDenouement": "R2 & 3PO's escape pod careens toward Tatooine."
+      },
+      "catalyst": {
+        "text": "A Purchase Leads to Adventure",
+        "innerContext": "Droids captured by Jawas, sold to Uncle Owen and Luke.",
+        "innerCatalyst": "While cleaning R2, Luke sees Leia's plea for help.",
+        "innerPoint": "\"Ben\" Kenobi rescues Luke and tells him of the Jedi Knights.",
+        "innerClimax": "Luke receives his father's lightsaber.",
+        "innerDenouement": "Luke refuses Obi Wan's offer to accompany him to Alderaan."
+      },
+      "point": {
+        "text": "Belly of the Beast",
+        "innerContext": "Luke discovers his home and family destroyed.",
+        "innerCatalyst": "Luke & Obi-Wan meet Han & Chewbacca. They escape towards Alderaan.",
+        "innerPoint": "The Death Star destroys Alderaan, captures the Millennium Falcon.",
+        "innerClimax": "Luke, Han and Chewbacca rescue Leia. Obi-Wan sacrifices himself.",
+        "innerDenouement": "The group escapes to a rebel base on Yavin IV."
+      },
+      "climax": {
+        "text": "Dogfight",
+        "innerContext": "The Rebels discuss the Death Star's hidden weakness.",
+        "innerCatalyst": "Luke joins the rogue squadron in an X-Wing starfighter.",
+        "innerPoint": "The Rebels suffer heavy losses. Only Luke is left to take the final shot.",
+        "innerClimax": "Obi Wan: \"use the Force, Luke!\" Luke destroys the Death Star. Kaboom!",
+        "innerDenouement": "Luke and Han fly back to Yavin IV."
+      },
+      "denouement": {
+        "text": "Triumphant Ceremony",
+        "innerContext": "Back on Yavin IV, the trumpets blare.",
+        "innerCatalyst": "Luke, Han and Chewbacca enter the throne room.",
+        "innerPoint": "Leia awards Luke and Han medals of honor.",
+        "innerClimax": "Our heroes turn and accept the applause of the rebels.",
+        "innerDenouement": "Chewie, questioningly: \"Where's MY medal?\""
+      },
+      "id": 1
     }
   ]
 }

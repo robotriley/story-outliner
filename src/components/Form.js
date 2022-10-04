@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
-import { Popover, Whisper } from 'rsuite';
+import { Popover, Whisper, Button } from 'rsuite';
 // import { Drawer, Button, Placeholder } from 'rsuite';
 import Collapsible from './Collapsible';
 import AboutDrawer from './AboutDrawer';
@@ -75,9 +75,61 @@ const Form = () => {
     document.title = "Story Outliner"
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    fetch('http://localhost:3000/outlines', {
+      method: "POST",
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        title: title,
+        context: {
+          text: context,
+          innerContext: innerContext.context,
+          innerCatalyst: innerContext.catalyst,
+          innerPoint: innerContext.point,
+          innerClimax: innerContext.climax,
+          innerDenouement: innerContext.denouement
+        },
+        catalyst: {
+          text: catalyst,
+          innerContext: innerCatalyst.context,
+          innerCatalyst: innerCatalyst.catalyst,
+          innerPoint: innerCatalyst.point,
+          innerClimax: innerCatalyst.climax,
+          innerDenouement: innerCatalyst.denouement
+        },
+        point: {
+          text: point,
+          innerContext: innerPoint.context,
+          innerCatalyst: innerPoint.catalyst,
+          innerPoint: innerPoint.point,
+          innerClimax: innerPoint.climax,
+          innerDenouement: innerPoint.denouement
+        },
+        climax: {
+          text: climax,
+          innerContext: innerClimax.context,
+          innerCatalyst: innerClimax.catalyst,
+          innerPoint: innerClimax.point,
+          innerClimax: innerClimax.climax,
+          innerDenouement: innerClimax.denouement
+        },
+        denouement: {
+          text: denouement,
+          innerContext: innerDenouement.context,
+          innerCatalyst: innerDenouement.catalyst,
+          innerPoint: innerDenouement.point,
+          innerClimax: innerDenouement.climax,
+          innerDenouement: innerDenouement.denouement
+        }
+      })
+    })
+    alert("thank you for submitting")
+  }
+
   return (
     
-<div>
+<div id="main">
   <div className='titles'>
     <img id="favicon"
          src='./favicon.ico'
@@ -102,7 +154,8 @@ const Form = () => {
         title={title}
         />
   </div>
-  <div className="mainFormDiv">
+  <div className="mainFormDiv"
+        onSubmit={handleSubmit}>
     
     {/* TITLE INPUT */}
       <input type="text"
@@ -208,6 +261,9 @@ const Form = () => {
           <Collapsible inner={innerDenouement} setInner={setInnerDenouement} /> <br></br>
   </div>
   </div>
+    <div id="buttonBar">
+      <Button appearance="primary" color="green" onClick={handleSubmit}>submit to database</Button>
+    </div>
 </div>
   )
 }
