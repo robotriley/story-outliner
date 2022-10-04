@@ -3,9 +3,20 @@ import { Drawer, Button } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
-import VisualizeExample from './VisualizeExample';
+import VisualizeExample from './example1/VisualizeExample';
 
-const Visualize = ({ context = "", catalyst = "", point = "", climax = "", denouement = "", innerContext, innerCatalyst, innerPoint, innerClimax, innerDenouement, title=""} ) => {
+const Visualize = ({ 
+        context = "",
+        catalyst = "",
+        point = "",
+        climax = "",
+        denouement = "",
+        innerContext,
+        innerCatalyst,
+        innerPoint,
+        innerClimax,
+        innerDenouement,
+        title=""} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -57,12 +68,20 @@ const Visualize = ({ context = "", catalyst = "", point = "", climax = "", denou
                 <VisualizerCollapsible inner={innerDenouement} />
               </div>
           </div>
-            <img id="blankArc" src='./blankArcDarkGreyBg.png' alt="blank arc"></img>
+            <img
+              id="blankArc"
+              src='./blankArcDarkGreyBg.png'
+              alt="blank arc">
+            </img>
         </div>
         </Drawer.Body>
       </Drawer>
       
-      <Button appearance="subtle" color="blue" onClick={() => handleOpen('right')}>Visualize</Button>
+      <Button
+        appearance="subtle" 
+        color="blue" 
+        onClick={() => handleOpen('right')}>Visualize
+      </Button>
     </div>
   )
 }

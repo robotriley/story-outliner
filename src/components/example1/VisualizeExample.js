@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Drawer, Button } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
-import Collapsible from './Collapsible';
+import Collapsible from '../Collapsible';
 import ExampleCollapsibleContext from './ExampleCollapsibleContext';
 import ExampleCollapsibleCatalyst from './ExampleCollapsibleCatalyst';
 import ExampleCollapsiblePoint from './ExampleCollapsiblePoint';
 import ExampleCollapsibleClimax from './ExampleCollapsibleClimax';
 import ExampleCollapsibleDenouement from './ExampleCollapsibleDenouement';
-import VisualizerCollapsible from './VisualizerCollapsible';
+import VisualizerCollapsible from '../VisualizerCollapsible';
 
 const VisualizeExample = () => {
 

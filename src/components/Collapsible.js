@@ -39,7 +39,7 @@ const Collapsible = ({ inner, setInner }) => {
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="pointInput"
             className="innerPointLabel" >Point of No Return</label> <br />
-          <input name="pointOfNoReturn" onChange={handleChange}
+          <input name="point" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax</label> <br />
