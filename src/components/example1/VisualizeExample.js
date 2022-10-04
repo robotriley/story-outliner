@@ -33,28 +33,28 @@ const VisualizeExample = () => {
         <div id='visualizerDrawer'>
           <div id="bubbles">
           <div id='contextBubble'>
-            <h5>Context:</h5>
+            {/* <h5>Context:</h5> */}
                 <p> A Narrow Escape in Space </p>
                 <ExampleCollapsibleContext /> 
           </div>
           <div id='catalystBubble'>
-            <h5>Catalyst:</h5>
+            {/* <h5>Catalyst:</h5> */}
                 <p> A Purchase Leads to Adventure </p>
                 <ExampleCollapsibleCatalyst />
           </div>
           <div id='pointBubble'>
-            <h5>Point of No Return:</h5>
+            {/* <h5>Point of No Return:</h5> */}
             <p> Belly of the Beast </p>
                 <ExampleCollapsiblePoint />
           </div>
           <div id='climaxBubble'>
-            <h5>Climax:</h5>
-              <p> Dogfight </p>
+            {/* <h5>Climax:</h5> */}
+            <p> Dogfight </p>
                 <ExampleCollapsibleClimax />
           </div>
           <div id='denouementBubble'>
-            <h5>Denouement:</h5>
-              <p> Triumphant Ceremony </p>
+            {/* <h5>Denouement:</h5> */}
+            <p> Triumphant Ceremony </p>
                 <ExampleCollapsibleDenouement />
               </div>
           </div>

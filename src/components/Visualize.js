@@ -41,30 +41,30 @@ const Visualize = ({
         <div id='visualizerDrawer'>
           <div id="bubbles">
           <div id='contextBubble'>
-            <h5>Context:</h5>
-            <p> { context } </p>
+            <h5>{ context ? context: "Context:"}</h5>
+            {/* <p> { context } </p> */}
                 <VisualizerCollapsible inner={innerContext} /> 
           </div>
           <div id='catalystBubble'>
-            <h5>Catalyst:</h5>
-            <p> { catalyst } </p>
+                <h5>{catalyst ? catalyst : "Catalyst:"}</h5>
+            {/* <p> { catalyst } </p> */}
                 <VisualizerCollapsible inner={innerCatalyst}
                 />
           </div>
           <div id='pointBubble'>
-            <h5>Point of No Return:</h5>
-            <p> { point } </p>
+                <h5>{point ? point : "Point of No Return:"}</h5>
+            {/* <p> { point } </p> */}
                 <VisualizerCollapsible inner={innerPoint}
                 />
           </div>
           <div id='climaxBubble'>
-            <h5>Climax:</h5>
-              <p>{ climax }</p>
+                <h5>{climax ? climax : "Climax:"}</h5>
+              {/* <p>{ climax }</p> */}
                 <VisualizerCollapsible inner={innerClimax} />
           </div>
           <div id='denouementBubble'>
-            <h5>Denouement:</h5>
-              <p> {denouement} </p>
+                <h5>{denouement ? denouement : "Denouement:"}</h5>
+              {/* <p> {denouement} </p> */}
                 <VisualizerCollapsible inner={innerDenouement} />
               </div>
           </div>
