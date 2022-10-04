@@ -1,0 +1,47 @@
+{
+  "outlines": [
+    {
+      "title": "test",
+      "context": {
+        "text": "the beginning",
+        "innerContext": "innerContext",
+        "innerCatalyst": "innerCatalyst",
+        "innerPoint": "innerPoint",
+        "innerClimax": "innerClimax",
+        "innerDenouement": "innerDenouement"
+      },
+      "catalyst": {
+        "text": "the catalyst",
+        "innerContext": "innerContext",
+        "innerCatalyst": "innerCatalyst",
+        "innerPoint": "innerPoint",
+        "innerClimax": "innerClimax",
+        "innerDenouement": "innerDenouement"
+      },
+      "point": {
+        "text": "the point of no return",
+        "innerContext": "innerContext",
+        "innerCatalyst": "innerCatalyst",
+        "innerPoint": "innerPoint",
+        "innerClimax": "innerClimax",
+        "innerDenouement": "innerDenouement"
+      },
+      "climax": {
+        "text": "the point of no return",
+        "innerContext": "innerContext",
+        "innerCatalyst": "innerCatalyst",
+        "innerPoint": "innerPoint",
+        "innerClimax": "innerClimax",
+        "innerDenouement": "innerDenouement"
+      },
+      "denouement": {
+        "text": "the point of no return",
+        "innerContext": "innerContext",
+        "innerCatalyst": "innerCatalyst",
+        "innerPoint": "innerPoint",
+        "innerClimax": "innerClimax",
+        "innerDenouement": "innerDenouement"
+      }
+    }
+  ]
+}

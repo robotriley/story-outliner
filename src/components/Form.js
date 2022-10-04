@@ -103,6 +103,7 @@ const Form = () => {
         />
   </div>
   <div className="mainFormDiv">
+    
     {/* TITLE INPUT */}
       <input type="text"
              placeholder="Title of Story"
