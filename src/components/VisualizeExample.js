@@ -42,7 +42,7 @@ const VisualizeExample = () => {
                 <p> A Purchase Leads to Adventure </p>
                 <ExampleCollapsibleCatalyst />
           </div>
-          <div id='pointOfNoReturnBubble'>
+          <div id='pointBubble'>
             <h5>Point of No Return:</h5>
             <p> Belly of the Beast </p>
                 <ExampleCollapsiblePoint />

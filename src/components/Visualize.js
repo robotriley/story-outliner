@@ -5,7 +5,7 @@ import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
 import VisualizeExample from './VisualizeExample';
 
-const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax = "", denouement = "", innerContext, innerCatalyst, innerPoint, innerClimax, innerDenouement, title=""} ) => {
+const Visualize = ({ context = "", catalyst = "", point = "", climax = "", denouement = "", innerContext, innerCatalyst, innerPoint, innerClimax, innerDenouement, title=""} ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -40,9 +40,9 @@ const Visualize = ({ context = "", catalyst = "", pointOfNoReturn = "", climax =
                 <VisualizerCollapsible inner={innerCatalyst}
                 />
           </div>
-          <div id='pointOfNoReturnBubble'>
+          <div id='pointBubble'>
             <h5>Point of No Return:</h5>
-            <p> { pointOfNoReturn } </p>
+            <p> { point } </p>
                 <VisualizerCollapsible inner={innerPoint}
                 />
           </div>

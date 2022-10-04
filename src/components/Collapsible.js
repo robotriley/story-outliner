@@ -37,8 +37,8 @@ const Collapsible = ({ inner, setInner }) => {
             className="innerCatalystLabel">Catalyst</label> <br />
           <input name="catalyst" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
-          <label htmlFor="pointOfNoReturnInput"
-            className="innerPointOfNoReturnLabel" >Point of No Return</label> <br />
+          <label htmlFor="pointInput"
+            className="innerPointLabel" >Point of No Return</label> <br />
           <input name="pointOfNoReturn" onChange={handleChange}
             placeholder='your text here'></input> <br /><br />
           <label htmlFor="climaxInput"

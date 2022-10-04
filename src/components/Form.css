@@ -78,7 +78,7 @@ input {
   font-weight: 700;
 }
 
-.pointOfNoReturnLabel {
+.pointLabel {
   color: orange;
   font-size: 1.5em;
   font-weight: 700;
@@ -106,7 +106,7 @@ input {
   font-weight: 700;
 }
 
-.innerPointOfNoReturnLabel {
+.innerPointLabel {
   color: orange;
   font-weight: 700;
   font-size: 0.90em;
@@ -143,7 +143,7 @@ input {
   font-weight: 600;
 }
 
-.pointOfNoReturnPopover {
+.pointPopover {
   background-color: rgba(20, 20, 20, .8);
   /* border: dashed orange; */
   border-radius: 10px;
@@ -314,7 +314,7 @@ max-height: 180px;
   width: 220px;
   z-index: 1;
 }
-#pointOfNoReturnBubble {
+#pointBubble {
   background-color: rgba(20, 20, 20, .7);
   border: solid orange;
   border-radius: 10px 10px 0px 0px;

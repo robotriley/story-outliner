@@ -22,8 +22,8 @@ const ExampleCollapsibleCatalyst = () => {
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
           <h5 className='innerContent'>While cleaning R2, Luke sees Leia's plea for help.</h5><br />
-          <label htmlFor="pointOfNoReturnInput"
-            className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
+          <label htmlFor="pointInput"
+            className="innerPointLabel" >Point of No Return:</label> <br />
           <h5 className='innerContent'>"Ben" Kenobi rescues Luke and tells him of the Jedi Knights.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />

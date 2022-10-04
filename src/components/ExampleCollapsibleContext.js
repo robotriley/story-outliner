@@ -23,7 +23,7 @@ const ExampleCollapsibleContext = () => {
             className="innerCatalystLabel">Catalyst:</label> <br />
           <h5 className='innerContent'>Darth Vader boards the Cruiser.</h5><br />
           <label htmlFor="pointOfNoReturnInput"
-            className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
+            className="innerPointLabel" >Point of No Return:</label> <br />
           <h5 className='innerContent'>Princess Leia loads secret data into R2D2.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />

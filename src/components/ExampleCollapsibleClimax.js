@@ -22,8 +22,8 @@ const ExampleCollapsibleClimax = () => {
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
           <h5 className='innerContent'>Luke joins the rogue squadron in an X-Wing starfighter.</h5><br />
-          <label htmlFor="pointOfNoReturnInput"
-            className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
+          <label htmlFor="pointInput"
+            className="innerPointLabel" >Point of No Return:</label> <br />
           <h5 className='innerContent'>The Rebels suffer heavy losses. Only Luke is left to take the final shot.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />

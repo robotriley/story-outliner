@@ -22,8 +22,8 @@ const ExampleCollapsiblePoint = () => {
           <label htmlFor="catalystInput"
             className="innerCatalystLabel">Catalyst:</label> <br />
           <h5 className='innerContent'>Luke & Obi-Wan meet Han & Chewbacca. They escape towards Alderaan.</h5><br />
-          <label htmlFor="pointOfNoReturnInput"
-            className="innerPointOfNoReturnLabel" >Point of No Return:</label> <br />
+          <label htmlFor="pointInput"
+            className="innerPointLabel" >Point of No Return:</label> <br />
           <h5 className='innerContent'>The Death Star destroys Alderaan, captures the Millenium Falcon.</h5><br />
           <label htmlFor="climaxInput"
             className="innerClimaxLabel" >Climax:</label> <br />

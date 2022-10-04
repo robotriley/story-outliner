@@ -11,42 +11,42 @@ const Form = () => {
   const [title, setTitle] = useState("")
   const [context, setContext] = useState("")
   const [catalyst, setCatalyst] = useState("")
-  const [pointOfNoReturn, setPointOfNoReturn] = useState("")
+  const [point, setPoint] = useState("")
   const [climax, setClimax] = useState("")
   const [denouement, setDenouement] = useState("")
   
   const [innerContext, setInnerContext] = useState({
     context: "",
     catalyst: "",
-    pointOfNoReturn: "",
+    point: "",
     climax: "",
     denouement: ""
   })
   const [innerCatalyst, setInnerCatalyst] = useState({
     context: "",
     catalyst: "",
-    pointOfNoReturn: "",
+    point: "",
     climax: "",
     denouement: ""
   })
   const [innerPoint, setInnerPoint] = useState({
     context: "",
     catalyst: "",
-    pointOfNoReturn: "",
+    point: "",
     climax: "",
     denouement: ""
   })
   const [innerClimax, setInnerClimax] = useState({
     context: "",
     catalyst: "",
-    pointOfNoReturn: "",
+    point: "",
     climax: "",
     denouement: ""
   })
   const [innerDenouement, setInnerDenouement] = useState({
     context: "",
     catalyst: "",
-    pointOfNoReturn: "",
+    point: "",
     climax: "",
     denouement: ""
   })
@@ -57,8 +57,8 @@ const Form = () => {
   const handleCatalystChange = (e) => {
     setCatalyst(e.target.value)
   }
-  const handlePointOfNoReturnChange = (e) => {
-    setPointOfNoReturn(e.target.value)
+  const handlePointChange = (e) => {
+    setPoint(e.target.value)
   }
   const handleClimaxChange = (e) => {
     setClimax(e.target.value)
@@ -91,7 +91,7 @@ const Form = () => {
         <Visualize
         context={context}
         catalyst={catalyst}
-        pointOfNoReturn={pointOfNoReturn}
+        point={point}
         climax={climax}
         denouement={denouement}
         innerContext={innerContext}
@@ -150,30 +150,30 @@ const Form = () => {
       <Collapsible inner={innerCatalyst} setInner={setInnerCatalyst}
       />
           <Whisper followCursor
-                   speaker={<Popover className='pointOfNoReturnPopover' arrow={false} >
+                   speaker={<Popover className='pointPopover' arrow={false} >
             <h6>New and Unplanned Direction, "You Can't Go Home Again," <br />
                Crossing the Threshold, No Way Out 
             </h6></Popover>}>
-          <label htmlFor="pointOfNoReturn-input"
-            className='pointOfNoReturnLabel'>
+          <label htmlFor="point-input"
+            className='pointLabel'>
               Point of No Return
             </label>
         </Whisper> 
 
         {/* POINT OF NO RETURN INPUT */}
     <input type="text"
-           name="point-of-no-return-input"
+           name="pointInput"
            placeholder="your text here"
-          onChange={handlePointOfNoReturnChange}>
+          onChange={handlePointChange}>
     </input> <br />
       <Collapsible inner={innerPoint} setInner={setInnerPoint} />
           <Whisper followCursor
                    speaker={<Popover className='climaxPopover' arrow={false} >
             <h6>Main Event, The Highest Point of Tension, Decisive Moment, <br />
-            The Release, Pivotal Moment, Peak of the Story <br />
+            The Release, Pivotal Moment, Peak of the Story, <br />
             Biggest Obstacle
             </h6></Popover> }>
-    <label htmlFor="context-input"
+    <label htmlFor="climax-input"
            className="climaxLabel" >Climax
     </label> 
         </Whisper>
