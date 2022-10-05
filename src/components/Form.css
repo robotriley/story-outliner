@@ -18,6 +18,7 @@
   flex-direction: row;
   justify-content: center;
   max-width: 390px;
+
 }
 #favicon {
   margin-right: 8px;
@@ -382,4 +383,25 @@ max-height: 180px;
 
 .exampleButton1 {
   margin-left: 30px;
+}
+
+li {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: smaller;
+}
+.contextLi::marker {
+  color: cyan;
+}
+.catalystLi::marker {
+  color: yellowgreen;
+}
+.pointLi::marker {
+  color: orange;
+}
+.climaxLi::marker {
+  color: tomato;
+}
+.denouementLi::marker {
+  color: lightpink;
 }

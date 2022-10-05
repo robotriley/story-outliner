@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
 import { Popover, Whisper, Button } from 'rsuite';
@@ -153,6 +154,7 @@ const Form = () => {
         innerDenouement={innerDenouement}
         title={title}
         />
+  <Button appearance="subtle" color="orange"> <Link to="/gallery">Gallery</Link></Button>
   </div>
   <div className="mainFormDiv"
         onSubmit={handleSubmit}>
