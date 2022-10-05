@@ -159,6 +159,9 @@ const Form = () => {
   <div className="mainFormDiv"
         onSubmit={handleSubmit}>
     
+        <label htmlFor="context-input"
+          className="titleLabel">
+            Title </label>
     {/* TITLE INPUT */}
       <input type="text"
              placeholder="Title of Story"
