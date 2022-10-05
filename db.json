@@ -87,6 +87,50 @@
         "innerDenouement": "Chewie, questioningly: \"Where's MY medal?\""
       },
       "id": 1
+    },
+    {
+      "title": "Back to the Future (1985)",
+      "context": {
+        "text": "Hill Valley, CA. 1985",
+        "innerContext": "Marty McFly enters Doc Brown's garage.",
+        "innerCatalyst": "Late for school, Marty skates through town.",
+        "innerPoint": "Principal Strickland catches and admonishes Marty.",
+        "innerClimax": "Marty band auditions for Battle of the Bands",
+        "innerDenouement": "Down on his luck, Marty confides in Jennifer: He fears becoming like his parents."
+      },
+      "catalyst": {
+        "text": "Twin Pines Mall",
+        "innerContext": "Late at night, Doc Brown unveils his time machine DeLorean.",
+        "innerCatalyst": "Gunmen arrive and begin shooting at Doc and Marty.",
+        "innerPoint": "Doc Brown is gunned down. Marty jumps into the DeLorean",
+        "innerClimax": "Marty hits 88 MPH and travels back to 1955. He crashes into a barn.",
+        "innerDenouement": "Marty looks at the \"Hill Valley 2 Miles\" sign as he walks into town."
+      },
+      "point": {
+        "text": "Hill Valley, CA. 1955",
+        "innerContext": "Marty wanders around 1955 Hill Valley.",
+        "innerCatalyst": "Marty saves George from getting run over & becomes the object of Lorraine's affection.",
+        "innerPoint": "Brown theorizes: the only available energy source powerful enough to send Marty back to 1985 is lightning.",
+        "innerClimax": "Marty's siblings fade from a photograph. His actions have altered the future.",
+        "innerDenouement": "Marty attempts to get his future parents acquainted, but fails."
+      },
+      "climax": {
+        "text": "Enchantment Under the Sea",
+        "innerContext": "Lorraine asks Marty to the school dance.",
+        "innerCatalyst": "Marty's plan for George to rescue Lorraine is foiled by Biff. George punches Biff.",
+        "innerPoint": "Biff's goons trap Marty in a car trunk.",
+        "innerClimax": "Rescued by the band, Marty joins them on guitar. Lorraine and George kiss.",
+        "innerDenouement": "With his future no longer in jeopardy, Marty heads to the courthouse."
+      },
+      "denouement": {
+        "text": "We Don't Need Roads",
+        "innerContext": "Doc and Marty attempt to catch lightning to send Marty Back to the Future",
+        "innerCatalyst": "Doc find's Marty's letter and destroys it. Marty plans to go back earlier to save Doc.",
+        "innerPoint": "Marty returns to 1985. The DeLorean malfunctions. He sees Doc gunned down again.",
+        "innerClimax": "Marty discovers Brown is alive. He read the letter after all.",
+        "innerDenouement": "Back home, Marty's family life is different and better. Doc Brown has a new flying time machine."
+      },
+      "id": 2
     }
   ]
 }
