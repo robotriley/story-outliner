@@ -28,27 +28,61 @@ const Collapsible = ({ inner, setInner }) => {
       denouement*/}
       <div {...getCollapseProps()} >
         <div className="content">
-          <label htmlFor="contextInput"
-            className="innerContextLabel">Context</label> <br />
-          <input onChange={handleChange}
+          <label 
+            htmlFor="contextInput"
+            className="innerContextLabel">
+            Context
+          </label>
+          <br />
+          <input 
             name="context"
-                 placeholder='your text here'></input><br /><br />
-          <label htmlFor="catalystInput"
-            className="innerCatalystLabel">Catalyst</label> <br />
-          <input name="catalyst" onChange={handleChange}
-            placeholder='your text here'></input> <br /><br />
-          <label htmlFor="pointInput"
-            className="innerPointLabel" >Point of No Return</label> <br />
-          <input name="point" onChange={handleChange}
-            placeholder='your text here'></input> <br /><br />
-          <label htmlFor="climaxInput"
-            className="innerClimaxLabel" >Climax</label> <br />
-          <input name="climax" onChange={handleChange}
-            placeholder='your text here'></input> <br /><br />
-          <label htmlFor="denouementInput"
-            className="innerDenouementLabel" >Denouement</label> <br />
-          <input name="denouement" onChange={handleChange}
-            placeholder='your text here'></input> <br /><br />
+            onChange={handleChange}
+            placeholder='your text here'>
+          </input><br /><br />
+          <label 
+            htmlFor="catalystInput"
+            className="innerCatalystLabel">
+            Catalyst
+          </label>
+          <br />
+          <input
+            name="catalyst"
+            onChange={handleChange}
+            placeholder='your text here'>
+          </input><br /><br />
+          <label
+            htmlFor="pointInput"
+            className="innerPointLabel">
+            Point of No Return
+          </label>
+          <br />
+          <input
+            name="point"
+            onChange={handleChange}
+            placeholder='your text here'>
+            </input><br /><br />
+          <label
+            htmlFor="climaxInput"
+            className="innerClimaxLabel">
+            Climax
+          </label>
+          <br />
+          <input
+            name="climax"
+            onChange={handleChange}
+            placeholder='your text here'>
+          </input><br /><br />
+          <label
+            htmlFor="denouementInput"
+            className="innerDenouementLabel">
+            Denouement
+          </label>
+          <br />
+          <input
+            name="denouement"
+            onChange={handleChange}
+            placeholder='your text here'>
+          </input><br /><br />
         </div>
       </div>
     </div>
