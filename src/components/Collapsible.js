@@ -17,7 +17,7 @@ const Collapsible = ({ inner, setInner }) => {
     <div>
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
               appearance="link"
-              color='yellow'
+              color='cyan'
               size="sm"
               >
         {isExpanded ? 'collapse' : 'expand'}
