@@ -44,7 +44,7 @@ const showOutlines = () => {
   <div id="buttonBar">
        <Button appearance="subtle" color="orange"> <Link to="/">Back to Main</Link></Button>
   </div>
-      <div className='mainGalleryDiv'>{outlines ? showOutlines() : null}
+      <div className='mainGalleryDiv'>{outlines ? showOutlines().reverse() : null}
       </div>
   </div>
   )
