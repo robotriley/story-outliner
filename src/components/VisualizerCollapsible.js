@@ -21,18 +21,18 @@ const VisualizerCollapsible = ({ inner }) => {
         {isExpanded ? 'collapse' : 'expand'}
       </Button>
       <div {...getCollapseProps()} >
-        <div>
-          <label className='innerContextLabel'>Context:</label> <br />
-          <h6 className='innerContent'>{inner.context}</h6>
-          <label className="innerCatalystLabel">Catalyst:</label> <br />
-          <h6 className='innerContent'>{inner.catalyst}</h6>
-          <label className="innerPointLabel" >Point of No Return:</label> <br />
-          <h6 className='innerContent'>{inner.point}</h6>
-          <label className="innerClimaxLabel" >Climax:</label> <br />
-          <h6 className='innerContent'>{inner.climax}</h6>
-          <label className="innerDenouementLabel" >Denouement:</label> <br />
-          <h6 className='innerContent'>{inner.denouement}</h6>
-        </div>
+        <ul>
+          {/* <label className='innerContextLabel'>Context:</label> <br /> */}
+          <li className='contextLiVis'>{inner.context ? inner.context: "Context"}</li>
+          {/* <label className="innerCatalystLabel">Catalyst:</label> <br /> */}
+          <li className='catalystLiVis'>{inner.catalyst ? inner.catalyst: "Catalyst"}</li>
+          {/* <label className="innerPointLabel" >Point of No Return:</label> <br /> */}
+          <li className='pointLiVis'>{inner.point ? inner.point: "Point of No Return"}</li>
+          {/* <label className="innerClimaxLabel" >Climax:</label> <br /> */}
+          <li className='climaxLiVis'>{inner.climax ? inner.climax: "Climax"}</li>
+          {/* <label className="innerDenouementLabel" >Denouement:</label> <br /> */}
+          <li className='denouementLiVis'>{inner.denouement ? inner.denouement: "Denouement"}</li>
+        </ul>
       </div>
     </div>
   )

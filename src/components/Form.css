@@ -301,7 +301,7 @@ max-height: 180px;
   /* left: 1px; */
   margin: 0px 10px;
   text-align: center;
-  padding: 1px;
+  padding: 5px;
   /* position: absolute; */
   width: 220px;
   z-index: 1;
@@ -322,7 +322,7 @@ max-height: 180px;
   /* justify-content: space-evenly; */
   /* left: 240px; */
   margin: 0px 10px;
-  padding: 1px;
+  padding: 5px;
   /* position: absolute; */
   text-align: center;
   width: 220px;
@@ -341,7 +341,7 @@ max-height: 180px;
   height: auto;
   /* justify-content: space-evenly; */
   margin: 0px 10px;
-  padding: 1px;
+  padding: 5px;
   text-align: center;
   top: 60px;
   width: 220px;
@@ -357,13 +357,13 @@ max-height: 180px;
   display: flex;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+  font-size: 5px;
   font-weight: bold;
   height: auto;
   /* justify-content: space-evenly; */
   margin: 0px 10px;
   text-align: center;
-  padding: 1px;
+  padding: 10px;
   /* position: absolute; */
   /* right: 290px; */
   top: 60px;
@@ -385,7 +385,7 @@ max-height: 180px;
   height: auto;
   /* justify-content: space-evenly; */
   margin: 0px 10px;
-  padding: 1px;
+  padding: 5px;
   /* position: absolute; */
   /* right: 60px; */
   text-align: center;
@@ -401,6 +401,7 @@ li {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
   font-size: 1.2em;
+  color: white;
 }
 .contextLi::marker {
   color: cyan;
@@ -429,4 +430,48 @@ li {
 .galleryTitle {
   display: flex;
   flex-direction: row;
+}
+
+.contextLiVis {
+  font-size:large; 
+  text-align: left;
+}
+
+.contextLiVis::marker {
+  color: cyan;
+  font-size: 1.5em;
+}
+
+.catalystLiVis {
+  font-size: large; 
+  text-align: left;
+}
+.catalystLiVis::marker {
+  color: yellowgreen;
+  font-size: 1.5em;
+}
+.pointLiVis {
+  font-size: large; 
+  text-align: left;
+}
+.pointLiVis::marker {
+  color: orange;
+  font-size: 1.5em;
+}
+.climaxLiVis {
+  font-size: large; 
+  text-align: left;
+}
+.climaxLiVis::marker {
+  color: tomato;
+  font-size: 1.5em;
+}
+.denouementLiVis {
+  font-size: large; 
+  text-align: left;
+}
+.denouementLiVis::marker {
+  color: lightpink;
+  text-align: left;
+  font-size: 1.5em;
 }

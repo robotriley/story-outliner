@@ -21,18 +21,18 @@ const GalleryVisualizerCollapsible = ({ inner }) => {
         {isExpanded ? 'collapse' : 'expand'}
       </Button>
       <div {...getCollapseProps()} >
-        <div>
-          <label className='innerContextLabel'>Context:</label> <br />
-          <h6 className='innerContent'>{inner.innerContext}</h6>
-          <label className="innerCatalystLabel">Catalyst:</label> <br />
-          <h6 className='innerContent'>{inner.innerCatalyst}</h6>
-          <label className="innerPointLabel" >Point of No Return:</label> <br />
-          <h6 className='innerContent'>{inner.innerPoint}</h6>
-          <label className="innerClimaxLabel" >Climax:</label> <br />
-          <h6 className='innerContent'>{inner.innerClimax}</h6>
-          <label className="innerDenouementLabel" >Denouement:</label> <br />
-          <h6 className='innerContent'>{inner.innerDenouement}</h6>
-        </div>
+        <ul>
+          {/* <label className='innerContextLabel'>Context:</label> <br /> */}
+          <li className='contextLiVis'>{inner.innerContext}</li>
+          {/* <label className="innerCatalystLabel">Catalyst:</label> <br /> */}
+          <li className='catalystLiVis'>{inner.innerCatalyst}</li>
+          {/* <label className="innerPointLabel" >Point of No Return:</label> <br /> */}
+          <li className='pointLiVis'>{inner.innerPoint}</li>
+          {/* <label className="innerClimaxLabel" >Climax:</label> <br /> */}
+          <li className='climaxLiVis'>{inner.innerClimax}</li>
+          {/* <label className="innerDenouementLabel" >Denouement:</label> <br /> */}
+          <li className='denouementLiVis'>{inner.innerDenouement}</li>
+        </ul>
       </div>
     </div>
   )
