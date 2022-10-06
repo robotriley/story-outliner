@@ -5,7 +5,7 @@ import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
 import OutlineCard from './OutlineCard'
 
-const GalleryDrawer = () => {
+const GalleryDrawer = ({outlines, setOutlines}) => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
 
@@ -14,7 +14,7 @@ const GalleryDrawer = () => {
     setPlacement(key);
   };
 
-  const [outlines, setOutlines] = useState(null)
+  
 
   const showOutlines = () => {
     return (

@@ -54,6 +54,8 @@ const Form = () => {
   })
 
   const [refresh, setRefresh] = useState(false)
+
+  const [outlines, setOutlines] = useState(null)
   
   const handleContextChange = (e) => {
     setContext(e.target.value)
@@ -79,9 +81,9 @@ const Form = () => {
     document.title = "Story Outliner"
   }, [refresh]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    fetch('http://localhost:3000/outlines', {
+    const req = await fetch('http://localhost:3000/outlines', {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -128,8 +130,10 @@ const Form = () => {
         }
       })
     })
+    const res = await req.json()
     alert("thank you for submitting")
-    setRefresh(prev => !prev)
+    setOutlines(prev => [...prev,res])
+    // setRefresh(prev => !prev)
   }
 
   return (
@@ -158,7 +162,7 @@ const Form = () => {
         innerDenouement={innerDenouement}
         title={title}
         />
-  <GalleryDrawer />
+  <GalleryDrawer outlines={outlines} setOutlines={setOutlines} />
   </div>
   <div className="mainFormDiv"
         onSubmit={handleSubmit}>
