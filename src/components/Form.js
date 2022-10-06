@@ -131,7 +131,7 @@ const Form = () => {
       })
     })
     const res = await req.json()
-    alert("thank you for submitting")
+    alert("Thank you for submitting! Your outline is now in the Gallery.")
     setOutlines(prev => [...prev,res])
     // setRefresh(prev => !prev)
   }
