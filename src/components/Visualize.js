@@ -4,6 +4,7 @@ import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
 
+
 const Visualize = ({ 
         context = "",
         catalyst = "",

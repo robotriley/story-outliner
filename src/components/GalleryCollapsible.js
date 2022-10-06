@@ -1,6 +1,8 @@
 import React from 'react'
 import useCollapse from 'react-collapsed'
 import { Button } from 'rsuite'
+import ArrowDownLineIcon from '@rsuite/icons/ArrowDownLine';
+import UnvisibleIcon from '@rsuite/icons/Unvisible';
 
 const GalleryCollapsible = ({ inner, setInner, outline }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
@@ -9,10 +11,10 @@ const GalleryCollapsible = ({ inner, setInner, outline }) => {
     <div>
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
               appearance="link"
-              color='cyan'
+              color='yellow'
               size="sm"
               >
-        {isExpanded ? 'collapse' : 'expand'}
+        {isExpanded ? <UnvisibleIcon /> : <ArrowDownLineIcon />}
       </Button>
       {/* catalyst
       pointOfNoReturn

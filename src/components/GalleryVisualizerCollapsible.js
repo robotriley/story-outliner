@@ -2,6 +2,9 @@ import { React, useState } from 'react'
 import useCollapse from 'react-collapsed'
 import GalleryVisualizer from './GalleryVisualizer'
 import { Button } from 'rsuite'
+import VisibleIcon from '@rsuite/icons/Visible';
+import UnvisibleIcon from '@rsuite/icons/Unvisible';
+import ArrowDownLineIcon from '@rsuite/icons/ArrowDownLine';
 
 const GalleryVisualizerCollapsible = ({ inner }) => {
   // const [contextContext, setContextContext] = useState("hello")
@@ -16,9 +19,9 @@ const GalleryVisualizerCollapsible = ({ inner }) => {
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
               appearance="link"
               color='yellow'
-              size="sm"
+              size="lg"
               >
-        {isExpanded ? 'collapse' : 'expand'}
+        {isExpanded ? <UnvisibleIcon /> : <ArrowDownLineIcon /> }
       </Button>
       <div {...getCollapseProps()} >
         <ul>
