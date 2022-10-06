@@ -405,18 +405,23 @@ li {
 }
 .contextLi::marker {
   color: cyan;
+  font-size: 1.5em;
 }
 .catalystLi::marker {
   color: yellowgreen;
+  font-size: 1.5em;
 }
 .pointLi::marker {
   color: orange;
+  font-size: 1.5em;
 }
 .climaxLi::marker {
   color: tomato;
+  font-size: 1.5em;
 }
 .denouementLi::marker {
   color: lightpink;
+  font-size: 1.5em;
 }
 
 .galleryCollapse {
@@ -424,7 +429,7 @@ li {
   flex-direction: column;
   justify-content: left;
   /* border: solid green; */
-  width: 430px;
+  /* width: 50%; */
 }
 
 .galleryTitle {
@@ -474,4 +479,13 @@ li {
   color: lightpink;
   text-align: left;
   font-size: 1.5em;
+}
+
+.credits {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
 }

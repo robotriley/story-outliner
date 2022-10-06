@@ -87,50 +87,6 @@
         "innerDenouement": "Back home, Marty's family life is different and better. Doc Brown has a new flying time machine."
       },
       "id": 2
-    },
-    {
-      "title": "",
-      "context": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
-      },
-      "catalyst": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
-      },
-      "point": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
-      },
-      "climax": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
-      },
-      "denouement": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
-      },
-      "id": 3
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Drawer, Button } from 'rsuite';
-import { Placeholder } from 'rsuite'
+import { Drawer, Button, ButtonToolbar, ButtonGroup } from 'rsuite';
+import LinkedinIcon from '@rsuite/icons/legacy/Linkedin';
+import GlobalIcon from '@rsuite/icons/Global';
 
 const AboutDrawer = () => {
   const [open, setOpen] = useState(false);
@@ -45,11 +46,32 @@ const AboutDrawer = () => {
               <img id='AboutImg' src="./about3DarkGrayBgNewColors.png" alt="About1"></img>
               <img id='AboutImg' src="./about4DarkGrayBgNewColors.png" alt="About2"></img>
           </div>
+          <div className='credits'>
+            {/* <h6>Built by: Riley Soloner</h6> */}
+            <ButtonToolbar>
+              <ButtonGroup>
+            <Button color="cyan" 
+                  appearance='ghost'
+                  target="_blank"
+                  href="https://www.linkedin.com/in/riley-soloner/">
+              <LinkedinIcon />
+            Riley Soloner
+            </Button>
+            <Button color="cyan" 
+                  appearance='ghost'
+                  target="_blank"
+                  href="https://github.com/robotriley/">
+              <ion-icon name="logo-github"></ion-icon>
+               Github
+            </Button>
+                </ButtonGroup>
+              </ButtonToolbar>
+          </div>
         </div>
         </Drawer.Body>
       </Drawer>
       
-      <Button appearance="subtle" color="red" onClick={() => handleOpen('left')}>About</Button>
+      <Button appearance="ghost" color="red" onClick={() => handleOpen('left')}>About</Button>
     </div>
   )
 }

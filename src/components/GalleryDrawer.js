@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import { Drawer, Button } from 'rsuite';
+import { Drawer, Button, ButtonToolbar, ButtonGroup } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
 import OutlineCard from './OutlineCard'
@@ -53,8 +53,9 @@ const GalleryDrawer = ({outlines, setOutlines}) => {
         </div>
         </Drawer.Body>
       </Drawer>
-      
-      <Button appearance="subtle" color="orange" onClick={() => handleOpen('top')}>Gallery</Button>
+      <Button appearance="ghost"
+              color="orange"
+              onClick={() => handleOpen('top')}>Gallery</Button>
     </div>
   )
 }

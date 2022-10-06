@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
-import { Popover, Whisper, Button } from 'rsuite';
+import { Popover, Whisper, Button, ButtonToolbar, ButtonGroup } from 'rsuite';
 // import { Drawer, Button, Placeholder } from 'rsuite';
 import Collapsible from './Collapsible';
 import AboutDrawer from './AboutDrawer';
@@ -148,6 +148,11 @@ const Form = () => {
 
   </div>
   <div id="buttonBar">
+    <ButtonToolbar>
+      <ButtonGroup>
+        
+      </ButtonGroup>
+    </ButtonToolbar>
   <AboutDrawer />
         <Visualize
         context={context}

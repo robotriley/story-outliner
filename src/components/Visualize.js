@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Drawer, Button } from 'rsuite';
+import { Drawer, Button, ButtonToolbar, ButtonGroup } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
@@ -77,7 +77,7 @@ const Visualize = ({
       </Drawer>
       
       <Button
-        appearance="subtle" 
+        appearance="ghost" 
         color="cyan" 
         onClick={() => handleOpen('right')}>Visualize
       </Button>
