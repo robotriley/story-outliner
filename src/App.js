@@ -1,7 +1,7 @@
 // import './App.css';
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Form from './components/Form.js'
-import Gallery from './components/Gallery.js'
+// import Gallery from './components/Gallery.js'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Form />} />
-          <Route path="/gallery" element={<Gallery />} />
+          {/* <Route path="/gallery" element={<Gallery />} /> */}
       </Routes>
       </BrowserRouter>
       
