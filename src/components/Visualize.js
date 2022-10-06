@@ -3,7 +3,6 @@ import { Drawer, Button } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import VisualizerCollapsible from './VisualizerCollapsible';
-import VisualizeExample from './example1/VisualizeExample';
 
 const Visualize = ({ 
         context = "",
@@ -35,7 +34,7 @@ const Visualize = ({
               onClose={() => setOpen(false)}>
         <Drawer.Header>
           <h2>{title ? title : "My Outline" }</h2>
-          <VisualizeExample />
+          {/* <VisualizeExample /> */}
         </Drawer.Header>
         <Drawer.Body>
         <div id='visualizerDrawer'>

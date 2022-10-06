@@ -3,7 +3,6 @@ import { Drawer, Button } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
 import GalleryVisualizerCollapsible from './GalleryVisualizerCollapsible';
-import VisualizeExample from './example1/VisualizeExample';
 
 const GalleryVisualizer = ({ outline } ) => {
 
