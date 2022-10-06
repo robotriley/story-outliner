@@ -7,6 +7,7 @@ import { Popover, Whisper, Button } from 'rsuite';
 import Collapsible from './Collapsible';
 import AboutDrawer from './AboutDrawer';
 import Visualize from './Visualize';
+import GalleryDrawer from './GalleryDrawer';
 
 const Form = () => {
   const [title, setTitle] = useState("")
@@ -51,6 +52,8 @@ const Form = () => {
     climax: "",
     denouement: ""
   })
+
+  const [refresh, setRefresh] = useState(false)
   
   const handleContextChange = (e) => {
     setContext(e.target.value)
@@ -74,7 +77,7 @@ const Form = () => {
 
   useEffect(() => {
     document.title = "Story Outliner"
-  }, []);
+  }, [refresh]);
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -126,6 +129,7 @@ const Form = () => {
       })
     })
     alert("thank you for submitting")
+    setRefresh(prev => !prev)
   }
 
   return (
@@ -154,7 +158,7 @@ const Form = () => {
         innerDenouement={innerDenouement}
         title={title}
         />
-  <Button appearance="subtle" color="orange"> <Link to="/gallery">Gallery</Link></Button>
+  <GalleryDrawer />
   </div>
   <div className="mainFormDiv"
         onSubmit={handleSubmit}>

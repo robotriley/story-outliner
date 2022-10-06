@@ -60,11 +60,13 @@ input {
 
 .mainGalleryDiv {
   align-items: baseline;
+  color: white;
   justify-content: center;
   /* border: solid red 2px; */
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  /* font-size: medium; */
   padding: 10px;
   /* border: solid red; */
   width: max-content;
@@ -398,7 +400,7 @@ max-height: 180px;
 li {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 .contextLi::marker {
   color: cyan;
