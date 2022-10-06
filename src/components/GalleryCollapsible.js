@@ -5,14 +5,6 @@ import { Button } from 'rsuite'
 const GalleryCollapsible = ({ inner, setInner, outline }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
 
-  const handleChange = (e) => {
-    let {name, value} = e.target
-    setInner({
-      ...inner,
-      [name]: value
-    })
-  }
-
   return (
     <div>
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}

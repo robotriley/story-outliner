@@ -2,21 +2,10 @@ import { useState } from 'react';
 import { Drawer, Button } from 'rsuite';
 import Collapse from 'rsuite/esm/Animation/Collapse';
 import Collapsible from './Collapsible';
-import VisualizerCollapsible from './VisualizerCollapsible';
+import GalleryVisualizerCollapsible from './GalleryVisualizerCollapsible';
 import VisualizeExample from './example1/VisualizeExample';
 
-const GalleryVisualizer = ({ 
-        context = "",
-        catalyst = "",
-        point = "",
-        climax = "",
-        denouement = "",
-        innerContext,
-        innerCatalyst,
-        innerPoint,
-        innerClimax,
-        innerDenouement,
-        title=""} ) => {
+const GalleryVisualizer = ({ outline } ) => {
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
@@ -34,37 +23,37 @@ const GalleryVisualizer = ({
               size={'full'}
               onClose={() => setOpen(false)}>
         <Drawer.Header>
-          <h2>{title ? title : "My Outline" }</h2>
+          <h2>{outline.title ? outline.title : "My Outline" }</h2>
         </Drawer.Header>
         <Drawer.Body>
         <div id='visualizerDrawer'>
           <div id="bubbles">
           <div id='contextBubble'>
-            <h5>{ context.text ? context: "Context:"}</h5>
+                <h5>{outline.context.text ? outline.context.text: "Context:"}</h5>
             {/* <p> { context } </p> */}
-                <VisualizerCollapsible inner={innerContext} /> 
+                <GalleryVisualizerCollapsible inner={outline.context} /> 
           </div>
           <div id='catalystBubble'>
-                <h5>{catalyst ? catalyst : "Catalyst:"}</h5>
+                <h5>{outline.catalyst.text ? outline.catalyst.text : "Catalyst:"}</h5>
             {/* <p> { catalyst } </p> */}
-                <VisualizerCollapsible inner={innerCatalyst}
-                />
+                <GalleryVisualizerCollapsible inner={outline.catalyst} />
+                
           </div>
           <div id='pointBubble'>
-                <h5>{point ? point : "Point of No Return:"}</h5>
+                <h5>{outline.point.text ? outline.point.text : "Point of No Return:"}</h5>
             {/* <p> { point } </p> */}
-                <VisualizerCollapsible inner={innerPoint}
-                />
+                <GalleryVisualizerCollapsible inner={outline.point} />
+                
           </div>
           <div id='climaxBubble'>
-                <h5>{climax ? climax : "Climax:"}</h5>
+                <h5>{outline.climax.text ? outline.climax.text : "Climax:"}</h5>
               {/* <p>{ climax }</p> */}
-                <VisualizerCollapsible inner={innerClimax} />
+                <GalleryVisualizerCollapsible inner={outline.climax} />
           </div>
           <div id='denouementBubble'>
-                <h5>{denouement ? denouement : "Denouement:"}</h5>
+                <h5>{outline.denouement.text ? outline.denouement.text : "Denouement:"}</h5>
               {/* <p> {denouement} </p> */}
-                <VisualizerCollapsible inner={innerDenouement} />
+                <GalleryVisualizerCollapsible inner={outline.denouement} />
               </div>
           </div>
             <img

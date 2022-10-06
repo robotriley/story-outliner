@@ -3,7 +3,7 @@ import useCollapse from 'react-collapsed'
 import GalleryVisualizer from './GalleryVisualizer'
 import { Button } from 'rsuite'
 
-const VisualizerCollapsible = ({ inner }) => {
+const GalleryVisualizerCollapsible = ({ inner }) => {
   // const [contextContext, setContextContext] = useState("hello")
 
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
@@ -23,15 +23,15 @@ const VisualizerCollapsible = ({ inner }) => {
       <div {...getCollapseProps()} >
         <div>
           <label className='innerContextLabel'>Context:</label> <br />
-          <h6 className='innerContent'>{inner.context}</h6>
+          <h6 className='innerContent'>{inner.innerContext}</h6>
           <label className="innerCatalystLabel">Catalyst:</label> <br />
-          <h6 className='innerContent'>{inner.catalyst}</h6>
+          <h6 className='innerContent'>{inner.innerCatalyst}</h6>
           <label className="innerPointLabel" >Point of No Return:</label> <br />
-          <h6 className='innerContent'>{inner.point}</h6>
+          <h6 className='innerContent'>{inner.innerPoint}</h6>
           <label className="innerClimaxLabel" >Climax:</label> <br />
-          <h6 className='innerContent'>{inner.climax}</h6>
+          <h6 className='innerContent'>{inner.innerClimax}</h6>
           <label className="innerDenouementLabel" >Denouement:</label> <br />
-          <h6 className='innerContent'>{inner.denouement}</h6>
+          <h6 className='innerContent'>{inner.innerDenouement}</h6>
         </div>
       </div>
     </div>
@@ -39,4 +39,4 @@ const VisualizerCollapsible = ({ inner }) => {
 
 }
 
-export default VisualizerCollapsible;
+export default GalleryVisualizerCollapsible;

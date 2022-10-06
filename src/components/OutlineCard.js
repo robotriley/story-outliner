@@ -1,10 +1,11 @@
 import './Form.css';
 import GalleryCollapsible from './GalleryCollapsible';
+import GalleryVisualizer from './GalleryVisualizer';
 
 const OutlineCard = ({ outline }) => {
   return (
     <div>
-      <h2>{outline.title ? outline.title : "Title"} </h2>
+      <h2 className='galleryTitle'>{outline.title ? outline.title : "Title"} <GalleryVisualizer outline={outline} />  </h2>
       <h6 className='contextLabel'>
           {outline.context.text ? outline.context.text : "Context"}
       </h6>
