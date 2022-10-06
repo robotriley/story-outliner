@@ -2,7 +2,6 @@ import { React, useState } from 'react'
 import useCollapse from 'react-collapsed'
 import GalleryVisualizer from './GalleryVisualizer'
 import { Button } from 'rsuite'
-import VisibleIcon from '@rsuite/icons/Visible';
 import UnvisibleIcon from '@rsuite/icons/Unvisible';
 import ArrowDownLineIcon from '@rsuite/icons/ArrowDownLine';
 

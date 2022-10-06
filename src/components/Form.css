@@ -429,7 +429,7 @@ li {
   flex-direction: column;
   justify-content: left;
   /* border: solid green; */
-  /* width: 50%; */
+  width: 80%;
 }
 
 .galleryTitle {

@@ -1,6 +1,50 @@
 {
   "outlines": [
     {
+      "title": "Riley's Presentation",
+      "context": {
+        "text": "Intro",
+        "innerContext": "Hello!",
+        "innerCatalyst": "Stories are all around us.",
+        "innerPoint": "But writing them can be intimidating, challenging and confusing.",
+        "innerClimax": "My goal was to create a simple, elegant app that streamlines the outlining process.",
+        "innerDenouement": "Allowing the user to more effectively plan and write stories."
+      },
+      "catalyst": {
+        "text": "This is Story Outliner",
+        "innerContext": "The homepage is a simple form with three buttons at the top.",
+        "innerCatalyst": "If breaking a story is new to you, click the About button to open the drawer.",
+        "innerPoint": "Here I've included a graphic representation of how a simple narrative arc is built.",
+        "innerClimax": "The major points of a story are like smaller stories within the main one.",
+        "innerDenouement": "Press escape or click the X in the header to return to the main page."
+      },
+      "point": {
+        "text": "Entering Input",
+        "innerContext": "Enter your input to begin outlining your story.",
+        "innerCatalyst": "If you're not familiar with these terms, you can hover over them to see multiple definitions.",
+        "innerPoint": "Clicking the small arrows at the bottom of each input field reveals a nested list inside the main points (ask somebody about a movie they know well).",
+        "innerClimax": "Now that we have some of our story outlined, let's click visualize.",
+        "innerDenouement": "In this drawer, you'll see your story laid out, with the different sections laid out in their place in the larger story. Any area that isn’t yet filled in will display its placeholder title, so it’s easy to know what’s left to fill in."
+      },
+      "climax": {
+        "text": "Submitting an Outline",
+        "innerContext": "OK. We have our outline in pretty good shape. We're ready to save it.",
+        "innerCatalyst": "Scroll down to the bottom of the page and click \"submit to database\"\"",
+        "innerPoint": "Now you're ready to see your work in the gallery page.",
+        "innerClimax": "Here's a list of every outline submitted to the database, with the most recently submitted outline at the top.",
+        "innerDenouement": "Every outline in the database can be viewed in list mode or in visualize mode. Here's our newly submitted Outline, here's Back to the Future, and here's Star Wars."
+      },
+      "denouement": {
+        "text": "Ending",
+        "innerContext": "Oh, would you look at that:",
+        "innerCatalyst": "It seems that this presentation I'm currently giving was also written using Story Outliner.",
+        "innerPoint": "I guess what I said earlier is true: stories really are all around us.",
+        "innerClimax": "Everybody in Turing chants: \"STORIES ARE ALL AROUND US! STORIES ARE ALL AROUND US! STORIES ARE ALL AROUND US!!!!",
+        "innerDenouement": "That's my presentation. Thank you."
+      },
+      "id": 0
+    },
+    {
       "title": "Star Wars (1977)",
       "context": {
         "text": "In a Galaxy Far, Far Away",
@@ -88,5 +132,6 @@
       },
       "id": 2
     }
+    
   ]
 }
