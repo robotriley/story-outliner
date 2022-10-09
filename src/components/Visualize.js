@@ -78,8 +78,9 @@ const Visualize = ({
       </Drawer>
       
       <Button
-        appearance="ghost" 
+        appearance="link" 
         color="cyan" 
+        size='sm'
         onClick={() => handleOpen('right')}>Visualize
       </Button>
     </div>

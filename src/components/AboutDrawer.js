@@ -71,7 +71,11 @@ const AboutDrawer = () => {
         </Drawer.Body>
       </Drawer>
       
-      <Button appearance="ghost" color="red" onClick={() => handleOpen('left')}>About</Button>
+      <Button
+        appearance="link"
+        size='sm'
+        color="red"
+        onClick={() => handleOpen('left')}>About</Button>
     </div>
   )
 }

@@ -53,8 +53,9 @@ const GalleryDrawer = ({outlines, setOutlines}) => {
         </div>
         </Drawer.Body>
       </Drawer>
-      <Button appearance="ghost"
+      <Button appearance="link"
               color="orange"
+              size='sm'
               onClick={() => handleOpen('top')}>Gallery</Button>
     </div>
   )

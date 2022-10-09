@@ -150,10 +150,11 @@ const Form = () => {
   <div id="buttonBar">
     <ButtonToolbar>
       <ButtonGroup>
-        
-      </ButtonGroup>
-    </ButtonToolbar>
-  <AboutDrawer />
+            <Button
+              appearance='ghost'>
+              <AboutDrawer />
+            </Button>
+            <Button appearance='ghost'>
         <Visualize
         context={context}
         catalyst={catalyst}
@@ -167,7 +168,15 @@ const Form = () => {
         innerDenouement={innerDenouement}
         title={title}
         />
-  <GalleryDrawer outlines={outlines} setOutlines={setOutlines} />
+            </Button>
+            <Button appearance='ghost'>
+              <GalleryDrawer
+                outlines={outlines}
+                setOutlines={setOutlines} />
+
+            </Button>
+      </ButtonGroup>
+    </ButtonToolbar>
   </div>
   <div className="mainFormDiv"
         onSubmit={handleSubmit}>
