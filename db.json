@@ -131,7 +131,50 @@
         "innerDenouement": "Back home, Marty's family life is different and better. Doc Brown has a new flying time machine."
       },
       "id": 2
+    },
+    {
+      "title": "The Dark Knight",
+      "context": {
+        "text": "Gotham's CRAZY!",
+        "innerContext": "Bank Robbery",
+        "innerCatalyst": "Batman: \"I don't wear hockey pads!\"",
+        "innerPoint": "Somebody dies!",
+        "innerClimax": "Joker enters party. ",
+        "innerDenouement": "Batman and rachel on top of a car. wow!"
+      },
+      "catalyst": {
+        "text": "",
+        "innerContext": "Wayne Manor is HUGE!",
+        "innerCatalyst": "",
+        "innerPoint": "",
+        "innerClimax": "",
+        "innerDenouement": ""
+      },
+      "point": {
+        "text": "",
+        "innerContext": "",
+        "innerCatalyst": "",
+        "innerPoint": "",
+        "innerClimax": "",
+        "innerDenouement": ""
+      },
+      "climax": {
+        "text": "",
+        "innerContext": "",
+        "innerCatalyst": "",
+        "innerPoint": "",
+        "innerClimax": "",
+        "innerDenouement": ""
+      },
+      "denouement": {
+        "text": "THE BIG END",
+        "innerContext": "",
+        "innerCatalyst": "",
+        "innerPoint": "joker's caught",
+        "innerClimax": "Two face dies",
+        "innerDenouement": "Gordon Riffs on what batman is."
+      },
+      "id": 3
     }
-    
   ]
 }
