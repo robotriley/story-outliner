@@ -188,7 +188,7 @@ const Form = () => {
       <input type="text"
              placeholder="Title of Story"
              onChange={handleTitleChange}>
-             </input> <br />
+        </input> <br /><br />
 
   <div name="mainOutlineForm">
           <Whisper followCursor 
