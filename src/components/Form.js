@@ -151,10 +151,10 @@ const Form = () => {
     <ButtonToolbar>
       <ButtonGroup>
             <Button
-              appearance='ghost'>
+              appearance='link'>
               <AboutDrawer />
             </Button>
-            <Button appearance='ghost'>
+            <Button appearance='link'>
         <Visualize
         context={context}
         catalyst={catalyst}
@@ -169,7 +169,7 @@ const Form = () => {
         title={title}
         />
             </Button>
-            <Button appearance='ghost'>
+            <Button appearance='link'>
               <GalleryDrawer
                 outlines={outlines}
                 setOutlines={setOutlines} />

@@ -65,7 +65,7 @@ const GalleryVisualizer = ({ outline } ) => {
       </Drawer>
       
       <Button
-        appearance="ghost" 
+        appearance="link" 
         color="cyan" 
         onClick={() => handleOpen('right')}>Visualize
       </Button>
