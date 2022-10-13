@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import 'rsuite/dist/rsuite.min.css';
 import './Form.css';
-import { Popover, Whisper, Button, ButtonToolbar, ButtonGroup } from 'rsuite';
-// import { Drawer, Button, Placeholder } from 'rsuite';
+import { Popover, Whisper, Button, ButtonToolbar, ButtonGroup, Modal } from 'rsuite';
 import Collapsible from './Collapsible';
 import AboutDrawer from './AboutDrawer';
 import Visualize from './Visualize';
@@ -16,7 +15,16 @@ const Form = () => {
   const [point, setPoint] = useState("")
   const [climax, setClimax] = useState("")
   const [denouement, setDenouement] = useState("")
-  
+  const [open, setOpen] = useState(false)
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+  }
+
   const [innerContext, setInnerContext] = useState({
     context: "",
     catalyst: "",
@@ -131,7 +139,8 @@ const Form = () => {
       })
     })
     const res = await req.json()
-    alert("Thank you for submitting! Your outline is now in the Gallery.")
+    handleOpen()
+    // alert("Thank you for submitting! Your outline is now in the Gallery.")
     setOutlines(prev => [...prev,res])
     // setRefresh(prev => !prev)
   }
@@ -291,6 +300,23 @@ const Form = () => {
     <div id="buttonBar">
       <Button appearance="primary" color="green" onClick={handleSubmit}>submit to database</Button>
     </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        keyboard={true}
+        size={'md'} >
+        <Modal.Header>
+          <Modal.Title>Success!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Thank you for submitting. Visit the Gallery to see all outlines.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={handleClose} appearance="primary">
+            Ok
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
   )
 }

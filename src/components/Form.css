@@ -489,3 +489,30 @@ li {
   align-items: center;
   margin-top: 25px;
 }
+
+/* MODAL */
+
+.rs-modal-content {
+  background-color: #202125;
+}
+
+.rs-modal-content p {
+  color: white;
+  /* font-weight: bold */
+}
+
+.rs-modal-title {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.rs-modal-wrapper {
+  /* border: solid white;
+  border-radius: 100px; */
+  opacity: 0.95;
+}
+
+.rs-modal-backdrop {
+  filter: drop-shadow(16px 16px 90px gray)
+}
