@@ -1,76 +1,34 @@
-What is the idea?
- "Story outline builder and visualizer"
+Hello! Thank you for stopping by.
 
-**What functionality does our app need?**
-1. What libraries do we need or can we use?
-2. What tables in the DB do I need to accomplish this?
-3. What methods/functions will I need to write?
-	- What arguments will these functions accept/pass?
-4. What does the front end consist of? (user interface / layout)
-  Inputs, buttons for expanding/collapsing, an image with the stoy arc graph, input values passed into the story arc "bubbles."
+I'm Riley Soloner. I'm a graduate of Flatiron School's Software Engineering bootcamp. I studied at their NYC campus. I was a part of cohort 062722.
 
-1. - [X] I need "expand-collapse" for the collapsible forms
-   - [X] I need something for the "pop up on hover" feature for showing the definitions of the different story points
+This is Story Outliner. My Phase 5 capstone project.
 
-2. [X] I don't need tables in the DB. this is front end only
+I come from an acting and performance background. On Day 1 of a formative year-long acting school experience, I was given a lesson on script analysis.
+In short: the structure of most stories, whether in the form of a scene, monologue, a full movie or play can be broken down into five main parts: 
+Context, Catalyst, Point of No Return, Climax, Denouement. My teacher illustrated these points on a line graph. Context starts at the bottom-left. The action rises
+steadily through the next two points, until reaching its apex at the climax. The Denouement is further to the right, lower than the climax, indicating the story's "falling action"
+and resolution.
 
-3. - [X] I need to write a method/function to handle the expanding/collapsing of child forms within the parent form
-   - [X] I need to write a function for populating the story arc graphic with the user's input,
-           passing the user's input into the corresponding piece of the story on the arc graphic
+Then, my teacher elaborated on this graph by erasing the lines between the points on the graph. He replaced each line with its own miniature, condensed version of 
+the larger story arc. He asked the class what this image now resembled: The readings of an EKG. A story rises and falls like the rhythm of a heartbeat.
 
-4. The front end consists of:
-    - [X] The parent form, consisting of the 5 main story points
-      - [X] Each story point has an input and an 'expand' button. When clicked, the button reveals a child form (complete with its own 5 point story
-        structure) beneath the corresponding story point. It is collapsible.
-    - [X] A story arc graphic. This will serve as a basic visual representation of the user's outlined story.
-          [X] The content from the form's input fields will populate the corresponding "bubble" on the graph's 5 story points.
-          [X] Each "bubble" will be clickable. On click, the child form's input (if any) will be visible beneath the parent.
+Stories are made up of smaller, interconnected stories.
 
+This isn't the be-all, end-all of all forms of storytelling, but understanding and utilizing
+this framework helps to eliminate the broad mystery of storytelling and creative work in general.
 
-Stretchies:
+There are thousands of graphs, forms and blog posts detailing the anatomy of an effectively written story, and yet I couldn't find an interactive tool
+for putting the narrative framwork to use.
 
-  - [x] Add <title> to your app so that it doesn't show "React app"
-  - [x] Add / create a favicon so that it doesn't show the React logo
-  - [ ] Persisting data to a db.json
-  - [x] Better color scheme (not 0, 0, 0 flat black background)
-  - [x] input placeholder text more readable color. (not flat grey)
-  - [x] icon next to the title header
+Story Outliner's main page is a form with six main input fields. One for your title, and five for each of the five story parts.
 
+Clicking on the yellow "v" arrow under each main story part reveals a collapsible list of five more story parts.
 
-**Libraries/Tools** (it helps to have backup libraries for any given functionality)
-BrowserRouter, useState
-d
-**Categorize your tech specs into 2 main categories: ESSENTIAL and NON-ESSENTIAL
+There's a collapsible list under each of the five main parts.
 
-ESSENTIAL means: what you need to demonstrate your concept.
-eg:
+After filling in as many of these input fields as you like, you can click the "visualize" button at the top of the page to see your input arranged in sections
+over a story arc image. Each "bubble" can be expanded to see the inner collapsible lists underneath the main story parts.
 
-NON-ESSENTIAL
-
-
-**Categorize ESSENTIAL and NON-ESSENTIAL into DO KNOW and DON'T KNOW
-
-DO KNOW(anything you've done end-to-end previously)
-take these tasks and timebox them. Add a buffer of AT LEAST 50%.
-- user authentication with devise (3h)
-- deployment (90m)
-- ticket model (1h)
-- event model (2h)
-
-DON'T KNOW(anything you haven't done 100%)
-- 
-- 
-- 
-
-**Isolate and Sandbox tasks from DON'T KNOW**
-
-
-
-
-**AUTH/validation should be the last thing you do**
-
-Or at least do it as late as possible.
-
-Assume that at least 33% of your tasks will need to be split into their own subtasks.
-
-Start project management process.
+At the bottom of the main form is a green "submit" button. This submits your input to a .json database. The contents of the database are viewable in the gallery page
+in reverse chronological order. Each outline in the gallery is viewable in list form or in a visualizer by clicking "visualize" next to the title of the outline.
