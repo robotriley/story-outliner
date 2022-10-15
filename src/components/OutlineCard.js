@@ -1,6 +1,7 @@
 import './Form.css';
 import GalleryCollapsible from './GalleryCollapsible';
 import GalleryVisualizer from './GalleryVisualizer';
+import { Divider } from 'rsuite'
 
 const OutlineCard = ({ outline }) => {
   return (
@@ -33,7 +34,7 @@ const OutlineCard = ({ outline }) => {
       {outline.denouement.text ? outline.denouement.text : "Denouement"}
       </h6>
       <GalleryCollapsible outline={outline.denouement} />
-      <hr></hr>
+      <Divider />
     </div>
   )
 }

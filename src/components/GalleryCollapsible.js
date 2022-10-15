@@ -12,7 +12,7 @@ const GalleryCollapsible = ({ inner, setInner, outline }) => {
       <Button id="react-collapsed-toggle-:r1:" {...getToggleProps()}
               appearance="link"
               color='yellow'
-              size="sm"
+              size="xs"
               >
         {isExpanded ? <UnvisibleIcon /> : <ArrowDownLineIcon />}
       </Button>
