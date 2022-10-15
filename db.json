@@ -133,48 +133,48 @@
       "id": 2
     },
     {
-      "title": "The Dark Knight",
+      "title": "CLON episode 2, ACT III",
       "context": {
-        "text": "Gotham's CRAZY!",
-        "innerContext": "Bank Robbery",
-        "innerCatalyst": "Batman: \"I don't wear hockey pads!\"",
-        "innerPoint": "Somebody dies!",
-        "innerClimax": "Joker enters party. ",
-        "innerDenouement": "Batman and rachel on top of a car. wow!"
+        "text": "Bryan's Life in shambles",
+        "innerContext": "Bryan, your life is in shambles",
+        "innerCatalyst": "You were a brash billionaire",
+        "innerPoint": "now you're a broke, lonely peanut butter salesman",
+        "innerClimax": "You're misguided. You worked too hard for money and reputation. Now you have neither.",
+        "innerDenouement": "and your fly is down. Any parting words for CLON?"
       },
       "catalyst": {
-        "text": "",
-        "innerContext": "Wayne Manor is HUGE!",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
+        "text": "Bryan's Last Words to CLON",
+        "innerContext": "CLON, you represent my biggest hopes and failures",
+        "innerCatalyst": "I did the best I could",
+        "innerPoint": "Now you're leaving, taking my money and dreams with you.",
+        "innerClimax": "Before going our separate ways, I want you to look inside yourself",
+        "innerDenouement": "and answer that call from within."
       },
       "point": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
+        "text": "CLON must decide",
+        "innerContext": "Kiko: \"Wow. Bryan, that was so stupid.\"",
+        "innerCatalyst": "OK CLON. time to decide on your new life with either Marla, Warrior 2 or Queen Dinanda",
+        "innerPoint": "What's it going to be? Money, Might, or Lust?",
+        "innerClimax": "CLON considers his options",
+        "innerDenouement": "CLON gets caught in the middle of a tug of war"
       },
       "climax": {
-        "text": "",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "",
-        "innerClimax": "",
-        "innerDenouement": ""
+        "text": "CLON's upgrade",
+        "innerContext": "CLON breaks away from the 3 temptations",
+        "innerCatalyst": "CLON \"looks inside himself\" by unzipping his suit and pulling out his internal wires",
+        "innerPoint": "CLON attaches his wires to a helmet",
+        "innerClimax": "CLON upgrades his consciousness (Bryan narrates all of this: \"wow, he's modified his software, giving his consciousness an upgrade!\")",
+        "innerDenouement": "CLON does a serene \"back away from me\" force push to the 3 temptations."
       },
       "denouement": {
-        "text": "THE BIG END",
-        "innerContext": "",
-        "innerCatalyst": "",
-        "innerPoint": "joker's caught",
-        "innerClimax": "Two face dies",
-        "innerDenouement": "Gordon Riffs on what batman is."
+        "text": "CLON in Space",
+        "innerContext": "CLON and Bryan face each other: Bryan opts for a hug, CLON bonks him with the Bonk Bat",
+        "innerCatalyst": "CLON asks for a mic: a subdued, deliberate version of his signature \"blechhhh!\"",
+        "innerPoint": "Kiko: \"What did he say?\" Bryan: (tearful) \"He said, blechhhh!\"",
+        "innerClimax": "CLON blasts off into space",
+        "innerDenouement": "CLON floats in space as everyone earth waves goodbye. Hank sings the closing \"CLON in SPACE\" song."
       },
-      "id": 3
+      "id": 4
     }
   ]
 }
