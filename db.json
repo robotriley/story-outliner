@@ -4,11 +4,11 @@
       "title": "Riley's Presentation",
       "context": {
         "text": "Intro",
-        "innerContext": "Hello!",
-        "innerCatalyst": "Stories are all around us.",
-        "innerPoint": "But writing them can be intimidating, challenging and confusing.",
-        "innerClimax": "My goal was to create a simple, elegant app that streamlines the outlining process.",
-        "innerDenouement": "Allowing the user to more effectively plan and write stories."
+        "innerContext": "Hello! I'm Riley Soloner, I'm a software engineer.",
+        "innerCatalyst": "I made this web application Story Outliner.",
+        "innerPoint": "My goal was to create an app that streamlines the early stages of the story writing process.",
+        "innerClimax": "Allowing users to more effectively plan and write stories.",
+        "innerDenouement": "I built this Front-End app using React with a JSON database. For styling, I used custom CSS and ReactSuite components."
       },
       "catalyst": {
         "text": "This is Story Outliner",
@@ -174,7 +174,7 @@
         "innerClimax": "CLON blasts off into space",
         "innerDenouement": "CLON floats in space as everyone earth waves goodbye. Hank sings the closing \"CLON in SPACE\" song."
       },
-      "id": 4
+      "id": 3
     }
   ]
 }

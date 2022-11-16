@@ -1,4 +1,4 @@
-Hello! Thank you for stopping by.
+Hello! Thanks for stopping by.
 
 I'm Riley Soloner. I'm a graduate of Flatiron School's Software Engineering bootcamp. I studied at their NYC campus. I was a part of cohort 062722.
 
