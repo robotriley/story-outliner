@@ -45,7 +45,12 @@ button {
 }
 
 .rs-btn-green {
-  background-color: white;
+  background-color: lightgray;
+  color: black;
+  /* border: solid red; */
+}
+.rs-btn-green:hover {
+  background-color: blanchedalmond;
   color: black;
   /* border: solid red; */
 }
