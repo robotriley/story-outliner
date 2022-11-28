@@ -44,6 +44,12 @@ button {
   font-size: 12px;
 }
 
+.rs-btn-green {
+  background-color: white;
+  color: black;
+  /* border: solid red; */
+}
+
 input {
   background-color: transparent;
   border-radius: 5px;
